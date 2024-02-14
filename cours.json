@@ -1,0 +1,14 @@
+{
+    "cours" :[
+        {
+            "image": "cours1.jpg",
+            "cout": " 60.00$",
+            "description": " Super cours de javascript avancée",
+            "nbHeures": "60h",
+            "nbetoiles": "3",
+            "notation": "6",
+            "ensemble de section": "a voir comment organiser cette section" 
+
+        }
+    ]
+}
