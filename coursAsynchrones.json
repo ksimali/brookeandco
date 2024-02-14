@@ -1,0 +1,41 @@
+{
+    "liste" :[
+        {
+            "image": "cours1.jpg",
+            "cout": " 60.00$",
+            "description": " Super cours de javascript avancée",
+            "durée": "60",
+            "notation": "6",
+            "sections":[
+                {
+                    "titre" : "",
+                    "description" : "",
+                    "durée" : "",
+                    "noteCours": [
+                        {
+                            "noteCours1": ""
+                        }
+                    ],
+                    "videos" : [
+                        {
+                            "titre" : "",
+                            "description" : "",
+                            "url" : "https://",
+                            "durée" : "30",
+                            "evaluation" : 4
+                        },
+                        {
+                            "titre" : "",
+                            "description" : "",
+                            "url" : "https://",
+                            "durée" : "30",
+                            "evaluation" : 4
+
+                        }
+                    ]
+                }
+            ]
+
+        }
+    ]
+}
