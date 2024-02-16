@@ -1,19 +1,19 @@
 {
     "liste" :[
         {
-            "image": "cours1.jpg",
-            "cout": " 60.00$",
-            "description": " Super cours de javascript avancée",
-            "durée": "60",
-            "notation": "6",
+            "image": "javascript.jpg",
+            "cout": 60.00,
+            "description": " Maîtrisez Javascript grâce a ce superbe cours très complet!",
+            "durée": 60,
+            "notation": 4,
             "sections":[
                 {
                     "titre" : "",
                     "description" : "",
-                    "durée" : "",
-                    "noteCours": [
+                    "durée" : 60,
+                    "note": [
                         {
-                            "noteCours1": ""
+                            "note1": ""
                         }
                     ],
                     "videos" : [
@@ -21,16 +21,13 @@
                             "titre" : "",
                             "description" : "",
                             "url" : "https://",
-                            "durée" : "30",
-                            "evaluation" : 4
+                            "durée" : 30
                         },
                         {
                             "titre" : "",
                             "description" : "",
                             "url" : "https://",
-                            "durée" : "30",
-                            "evaluation" : 4
-
+                            "durée" : 30
                         }
                     ]
                 }
