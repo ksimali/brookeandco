@@ -1,0 +1,520 @@
+{
+"CoursSynchrones":[
+    {
+        "id":"CS01",
+        "titre":"Atelier de Développement Web",
+        "formateur":"Prof. Ali Cassim",
+        "description":"Ce cours pratique explore les technologies web modernes.",
+        "type": "synchrone",
+        "duree":"",
+        "Sessions":[
+            {
+                "jour":"Lundi",
+                "heureDeDebut":"14:00:00",
+                "heureDeFin":"18:00:00",
+                "adresse":"En ligne"
+            },
+            {
+                "jour":"Mardi",
+                "heureDeDebut":"14:00:00",
+                "heureDeFin":"18:00:00",
+                "adresse":"En ligne"
+            },
+            {
+                "jour":"Jeudi",
+                "heureDeDebut":"08:00:00",
+                "heureDeFin":"12:00:00",
+                "adresse":"En ligne"
+            }
+        ],
+        "Module":[
+            {
+                "id":"M001",
+                "titre":"HTML et CSS",
+                "resources":[
+                    {
+                        "resource_id":"R001",
+                        "resource_type":"Session en direct",
+                        "resource_titre":"Introduction au HTML",
+                        "resource_duree": "07:30:00",
+                        "url":"#"
+                    },
+                    {
+                        "resource_id":"R002",
+                        "resource_type":"Session en direct",
+                        "resource_titre":"Introduction au CSS",
+                        "resource_duree": "03:00:00",
+                        "url":"#"
+                    },
+                    {
+                        "resource_id":"R003",
+                        "resource_type":"Evaluation01",
+                        "resource_titre":"Création d'une Page Web grace au technologie HTML et CSS",
+                        "resource_duree": "01:30:00",
+                        "url":"#"
+                    }
+                ]
+            },
+            {
+                "id":"M002",
+                "titre":"JAVASCRIPT",
+                "resources":[
+                    {
+                        "resource_id":"R004",
+                        "resource_type":"Session en direct",
+                        "resource_titre":"Introduction au Javascript",
+                        "resource_duree": "12:00:00",
+                        "url":"#"
+                    },
+                    {
+                        "resource_id":"R005",
+                        "resource_type":"Evaluation02",
+                        "resource_titre":"Integration du Javascript a une Page Web",
+                        "resource_duree": "2:00:00",
+                        "url":"#"
+                    }
+                ]
+            }
+        ]    
+    },
+    {
+        "id":"CS02",
+        "titre":"Python : La Formation Complète 2024",
+        "formateur":"Thibault Houdon",
+        "description":"De 0 à expert Python : la formation la plus complète avec 15 projets (Web, Data, Scripting, Bots), exercices, quiz...",
+        "type": "synchrone",
+        "Sessions":[
+            {
+                "jour":"Lundi",
+                "heureDeDebut":"08:00:00",
+                "heureDeFin":"10:00:00",
+                "adresse":"En ligne"
+            }
+        ],
+        "Module":[
+            {
+                "id":"M003",
+                "titre":"Les bases du langages",
+                "resources":[
+                    {
+                        "resource_id":"R001",
+                        "resource_type":"Session en direct",
+                        "resource_titre":"Mon premier programme python",
+                        "resource_duree": "07:30:00",
+                        "url":"#"
+                    },
+                    {
+                        "resource_id":"R002",
+                        "resource_type":"Evaluation",
+                        "resource_titre":"Projet: La calculatrice",
+                        "resource_duree": "02:30:00",
+                        "url":"#"
+                    }
+                ]
+            },
+            {
+                "id":"M004",
+                "titre":"Python et l'orientee objet",
+                "resources":[
+                    {
+                        "resource_id":"R004",
+                        "resource_type":"Session en direct",
+                        "resource_titre":"L'orientee objet en python",
+                        "resource_duree": "05:00:00",
+                        "url":"#"
+                    },
+                    {
+                        "resource_id":"R005",
+                        "resource_type":"Evaluation",
+                        "resource_titre":"Projet: Gestionnaire d'utilisateur",
+                        "resource_duree": "03:00:00",
+                        "url":"#"
+                    }
+                ]
+            }
+        ]    
+    },
+    {
+        "id":"CS03",
+        "titre":"Le cours complet de React.JS pour débutants",
+        "formateur":"Clara Lannoy",
+        "description":"Créez des applications Web robustes, rapides, conviviales et réactives.",
+        "type": "synchrone",
+        "Sessions":[
+            {
+                "jour":"Lundi",
+                "heureDeDebut":"14:00:00",
+                "heureDeFin":"18:00:00",
+                "adresse":"En ligne"
+            },
+            {
+                "jour":"Jeudi",
+                "heureDeDebut":"08:00:00",
+                "heureDeFin":"12:00:00",
+                "adresse":"En ligne"
+            }
+        ],
+        "Module":[
+            {
+                "id":"M005",
+                "titre":"Introduction a React.JS",
+                "resources":[
+                    {
+                        "resource_id":"R001",
+                        "resource_type":"Session en direct",
+                        "resource_titre":"Introduction a React.JS",
+                        "resource_duree": "07:30:00",
+                        "url":"#"
+                    },
+                    {
+                        "resource_id":"R002",
+                        "resource_type":"Session en direct",
+                        "resource_titre":"Hierarchie et notions plus avancees",
+                        "resource_duree": "08:00:00",
+                        "url":"#"
+                    },
+                    {
+                        "resource_id":"R003",
+                        "resource_type":"Evaluation",
+                        "resource_titre":"Construire une Calculatrice",
+                        "resource_duree": "01:30:00",
+                        "url":"#"
+                    }
+                ]
+            }
+        ]    
+    },
+    {
+        "id":"CS04",
+        "titre":"Wordpress 2024 - Créez votre site web professionnel de A à Z",
+        "formateur":"Mehdi Semlali",
+        "description":"Maîtrisez la création de sites web avec WordPress et Elementor - Formation complète et pratique - Débutants",
+        "type": "synchrone",
+        "Sessions":[
+            {
+                "jour":"Mardi",
+                "heureDeDebut":"14:00:00",
+                "heureDeFin":"18:00:00",
+                "adresse":"En ligne"
+            },
+            {
+                "jour":"Jeudi",
+                "heureDeDebut":"08:00:00",
+                "heureDeFin":"12:00:00",
+                "adresse":"En ligne"
+            }
+        ],
+        "Module":[
+            {
+                "id":"M006",
+                "titre":"Installation et configuration de Wordpress",
+                "resources":[
+                    {
+                        "resource_id":"R001",
+                        "resource_type":"Session en direct",
+                        "resource_titre":"Hebergement et installation de Wordpress",
+                        "resource_duree": "02:30:00",
+                        "url":"#"
+                    },
+                    {
+                        "resource_id":"R002",
+                        "resource_type":"Session en direct",
+                        "resource_titre":"Creation de contenu",
+                        "resource_duree": "04:00:00",
+                        "url":"#"
+                    },
+                    {
+                        "resource_id":"R003",
+                        "resource_type":"Session en direct",
+                        "resource_titre":"SEO & Referencement naturel",
+                        "resource_duree": "04:00:00",
+                        "url":"#"
+                    },
+                    {
+                        "resource_id":"R004",
+                        "resource_type":"Evaluation",
+                        "resource_titre":"Création d'une site Web avec Wordpress",
+                        "resource_duree": "02:30:00",
+                        "url":"#"
+                    }
+                ]
+            },
+            {
+                "id":"M007",
+                "titre":"Wordpress Avancees",
+                "resources":[
+                    {
+                        "resource_id":"R005",
+                        "resource_type":"Session en direct",
+                        "resource_titre":"UX / UI Design",
+                        "resource_duree": "00:30:00",
+                        "url":"#"
+                    },
+                    {
+                        "resource_id":"R006",
+                        "resource_type":"Session en direct",
+                        "resource_titre":"Extensions & Widgets",
+                        "resource_duree": "00:30:00",
+                        "url":"#"
+                    },
+                    {
+                        "resource_id":"R007",
+                        "resource_type":"Session en direct",
+                        "resource_titre":"Maintenance et securite",
+                        "resource_duree": "00:30:00",
+                        "url":"#"
+                    }
+                ]
+            }
+        ]    
+    },
+    {
+        "id":"CS05",
+        "titre":"Développer Votre Première Application avec Angular (2024)",
+        "formateur":"Simon DIENY",
+        "description":"Développez Facilement Votre Propre Application Angular en partant d'un dossier vide, avec Angular et TypeScript.",
+        "type": "synchrone",
+        "Sessions":[
+            {
+                "jour":"Lundi",
+                "heureDeDebut":"14:00:00",
+                "heureDeFin":"18:00:00",
+                "adresse":"En ligne"
+            },
+            {
+                "jour":"vendredi",
+                "heureDeDebut":"08:00:00",
+                "heureDeFin":"12:00:00",
+                "adresse":"En ligne"
+            }
+        ],
+        "Module":[
+            {
+                "id":"M008",
+                "titre":"Premier pas avec Angular",
+                "resources":[
+                    {
+                        "resource_id":"R001",
+                        "resource_type":"Session en direct",
+                        "resource_titre":"Introduction au développement Angular",
+                        "resource_duree": "01:30:00",
+                        "url":"#"
+                    },
+                    {
+                        "resource_id":"R002",
+                        "resource_type":"Session en direct",
+                        "resource_titre":"Démarrer une application Angular",
+                        "resource_duree": "01:00:00",
+                        "url":"#"
+                    },
+                    {
+                        "resource_id":"R003",
+                        "resource_type":"Evaluation",
+                        "resource_titre":"Ma premiere application Angular",
+                        "resource_duree": "01:30:00",
+                        "url":"#"
+                    }
+                ]
+            },
+            {
+                "id":"M009",
+                "titre":"Les composants Web",
+                "resources":[
+                    {
+                        "resource_id":"R004",
+                        "resource_type":"Session en direct",
+                        "resource_titre":"Les composants web.",
+                        "resource_duree": "12:00:00",
+                        "url":"#"
+                    },
+                    {
+                        "resource_id":"R005",
+                        "resource_type":"Evaluation",
+                        "resource_titre":" Améliorer notre composant racine",
+                        "resource_duree": "1:00:00",
+                        "url":"#"
+                    }
+                ]
+            }
+        ]    
+    },
+    {
+        "id":"CS06",
+        "titre":"APPRENDRE LE DESSIN: Le cours complet",
+        "formateur":"Damien Barban",
+        "description":"Astuces et conseils pour dessiner vos Mangas, Comics et BDs",
+        "type": "synchrone",
+        "Sessions":[
+            {
+                "jour":"Mercredi",
+                "heureDeDebut":"14:00:00",
+                "heureDeFin":"18:00:00",
+                "adresse":"En ligne"
+            },
+            {
+                "jour":"Vendredi",
+                "heureDeDebut":"08:00:00",
+                "heureDeFin":"12:00:00",
+                "adresse":"En ligne"
+            }
+        ],
+        "Module":[
+            {
+                "id":"M010",
+                "titre":"INTRODUCTION",
+                "resources":[
+                    {
+                        "resource_id":"R001",
+                        "resource_type":"Session en direct",
+                        "resource_titre":"La theorie des croquis",
+                        "resource_duree": "02:30:00",
+                        "url":"#"
+                    },
+                    {
+                        "resource_id":"R002",
+                        "resource_type":"Session en direct",
+                        "resource_titre":"La 3D et les mains",
+                        "resource_duree": "03:00:00",
+                        "url":"#"
+                    },
+                    {
+                        "resource_id":"R003",
+                        "resource_type":"Evaluation",
+                        "resource_titre":"Exercice mains et visage",
+                        "resource_duree": "01:30:00",
+                        "url":"#"
+                    }
+                ]
+            },
+            {
+                "id":"M011",
+                "titre":"LES BASES DU CROQUIS POUR DESSINER DU MANGA",
+                "resources":[
+                    {
+                        "resource_id":"R004",
+                        "resource_type":"Session en direct",
+                        "resource_titre":"Comment dessiner en volume",
+                        "resource_duree": "00:30:00",
+                        "url":"#"
+                    },
+                    {
+                        "resource_id":"R005",
+                        "resource_type":"Evaluation",
+                        "resource_titre":"Exercices pour dessiner toute la tête",
+                        "resource_duree": "01:30:00",
+                        "url":"#"
+                    }
+                ]
+            }
+        ]    
+    },
+    {
+        "id":"CS07",
+        "titre":"Cuisinéclair, l'art de cuisiner facilement et sainement",
+        "formateur":"Charles Jeandrain",
+        "description":"Apprendre la cuisine autrement avec le chef étoilé Charles Jeandrain du restaurant 'Attablez-Vous'",
+        "type": "synchrone",
+        "Sessions":[
+            {
+                "jour":"Lundi",
+                "heureDeDebut":"14:00:00",
+                "heureDeFin":"18:00:00",
+                "adresse":"En ligne"
+            },
+            {
+                "jour":"Mardi",
+                "heureDeDebut":"14:00:00",
+                "heureDeFin":"18:00:00",
+                "adresse":"En ligne"
+            }
+        ],
+        "Module":[
+            {
+                "id":"M012",
+                "titre":"PRINTEMPS",
+                "resources":[
+                    {
+                        "resource_id":"R001",
+                        "resource_type":"Session en direct",
+                        "resource_titre":"Burger Pur Boeuf, sauce Giant Maison",
+                        "resource_duree": "00:30:00",
+                        "url":"#"
+                    },
+                    {
+                        "resource_id":"R002",
+                        "resource_type":"Session en direct",
+                        "resource_titre":"Pomme de terre farcie d’une brandade de cabillaud",
+                        "resource_duree": "00:30:00",
+                        "url":"#"
+                    },
+                    {
+                        "resource_id":"R003",
+                        "resource_type":"Session en direct",
+                        "resource_titre":"Escalope de Veau à la milanaise, coulis de tomates...",
+                        "resource_duree": "00:30:00",
+                        "url":"#"
+                    }
+                ]
+            }
+        ]    
+    },
+    {
+        "id":"CS08",
+        "titre":"La gestion du stress pour les coachs et animateurs sportifs",
+        "formateur":"Vinvent Balissat",
+        "description":"Transformez vos activités en outils de gestion du stress",
+        "type": "synchrone",
+        "Sessions":[
+            {
+                "jour":"Jeudi",
+                "heureDeDebut":"08:00:00",
+                "heureDeFin":"10:00:00",
+                "adresse":"En ligne"
+            }
+        ],
+        "Module":[
+            {
+                "id":"M014",
+                "titre":"Le stress: Un mecanisme au coeur de la sante mentale",
+                "resources":[
+                    {
+                        "resource_id":"R001",
+                        "resource_type":"Session en direct",
+                        "resource_titre":"Techniques de gestion du stress : ce que l’on croit et ce que l’on sait.",
+                        "resource_duree": "01:00:00",
+                        "url":"#"
+                    },
+                    {
+                        "resource_id":"R002",
+                        "resource_type":"Session en direct",
+                        "resource_titre":"Et concrètement, c’est quoi « gérer le stress » ?",
+                        "resource_duree": "01:00:00",
+                        "url":"#"
+                    }
+                ]
+            },
+            {
+                "id":"M015",
+                "titre":"Le sport: l'outil de regulation du stress et d'amelioration de la sante mentale",
+                "resources":[
+                    {
+                        "resource_id":"R004",
+                        "resource_type":"Session en direct",
+                        "resource_titre":"L’action de l’activité physique sur le système nerveux",
+                        "resource_duree": "01:00:00",
+                        "url":"#"
+                    },
+                    {
+                        "resource_id":"R005",
+                        "resource_type":"Session en direct",
+                        "resource_titre":"Les principes de base : la « pierre angulaire » pour déjouer le stress chronique",
+                        "resource_duree": "2:00:00",
+                        "url":"#"
+                    }
+                ]
+            }
+            
+        ]    
+    }
+]
+}
