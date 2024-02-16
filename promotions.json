@@ -1,0 +1,40 @@
+{
+    "promotions": [
+        {
+            "id": 1,
+            "titre": "Formation complète en développement Web",
+            "description": "Apprenez le développement Web de A à Z avec notre cours en ligne.",
+            "prix": 199.99,
+            "rabais": 50,
+            "image": "https://example.com/images/web-development.jpg",
+            "lien": "https://example.com/courses/web-development"
+        },
+        {
+            "id": 2,
+            "titre": "Formation avancée en Python",
+            "description": "Maîtrisez les concepts avancés de Python avec notre formation en ligne.",
+            "prix": 149.99,
+            "rabais": 30,
+            "image": "https://example.com/images/python-advanced.jpg",
+            "lien": "https://example.com/courses/python-advanced"
+        },
+        {
+            "id": 3,
+            "titre": "Formation en marketing digital",
+            "description": "Découvrez les stratégies de marketing digital les plus efficaces avec notre cours en ligne.",
+            "prix": 129.99,
+            "rabais": 25,
+            "image": "https://example.com/images/digital-marketing.jpg",
+            "lien": "https://example.com/courses/digital-marketing"
+        },
+        {
+            "id": 4,
+            "titre": "Formation en design graphique",
+            "description": "Apprenez à concevoir des graphiques attrayants avec notre cours en ligne.",
+            "prix": 99.99,
+            "rabais": 20,
+            "image": "https://example.com/images/graphic-design.jpg",
+            "lien": "https://example.com/courses/graphic-design"
+        }
+    ]
+}
