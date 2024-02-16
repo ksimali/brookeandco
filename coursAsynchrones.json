@@ -19,13 +19,13 @@
                     "videos" : [
                         {
                             "titre" : "Welcome to web programming",
-                            "description" : "",
+                            "description" : "Comprendre l'intérêt de connaitre le javascript ",
                             "url" : "https://www.youtube.com/watch?v=mHuQJVAQrUg",
                             "durée" : 30
                         },
                         {
-                            "titre" : "",
-                            "description" : "",
+                            "titre" : "Concept de bases en Javascript",
+                            "description" : "notion de data-type, fonction et boucle et conditions ej javascript",
                             "url" : "https://www.youtube.com/watch?v=W6NZfCO5SIk",
                             "durée" : 30
                         }
@@ -82,6 +82,70 @@
                         {
                             "titre" : "C# Full Course for beginners",
                             "description" : "this C# tutorial for beginners to learn the fundamentals of C# (pronounced C sharp) and .NET framework.",
+                            "url" : "https://www.youtube.com/watch?v=gfkTfcpWqAY&list=PLTjRvDozrdlz3_FPXwb6lX_HoGXa09Yef",
+                            "durée" : 30
+                        }
+                    ]
+                },
+                {
+                    "titre" : "GUI C# Tutorial",
+                    "description" : "Maitrisez la création d'interface graphique(GUI) avec windowsForm",
+                    "durée" : 30,
+                    "note": [
+                        {
+                            "note1": "À la fin de ce cours, vous serez capable de : Créer des interface graphique simple et efficaces avec .NET Framework et window form"
+                        } 
+                    ],
+                    "videos" : [
+                        {
+                            "titre" : "Interface graphique avec winForm",
+                            "description" : "Windows Forms, a UI framework for building Windows desktop apps.  ",
+                            "url" : "https://www.youtube.com/watch?v=gfkTfcpWqAY&list=PLTjRvDozrdlz3_FPXwb6lX_HoGXa09Yef",
+                            "durée" : 30
+                        }
+                    ]
+                }
+            ]
+
+        },
+        {
+            "image": "java.jpg",
+            "cout": 60.00,
+            "description": "Maitrisez le langage de programmation Java de A à Z.",
+            "durée": 30,
+            "notation": 4,
+            "sections":[
+                {
+                    "titre" : "Cours complet de Java pour débutant",
+                    "description" : "Java is a popular programming language and everyday people use to build games, desktop, mobile, and web applications.",
+                    "durée" : 30,
+                    "note": [
+                        {
+                            "note1": "À la fin de ce cours, vous serez capable de : Créer des données et Gérer la logique d'un programme C#"
+                        } 
+                    ],
+                    "videos" : [
+                        {
+                            "titre" : "C# Full Course for beginners",
+                            "description" : "this C# tutorial for beginners to learn the fundamentals of C# (pronounced C sharp) and .NET framework.",
+                            "url" : "https://www.youtube.com/watch?v=gfkTfcpWqAY&list=PLTjRvDozrdlz3_FPXwb6lX_HoGXa09Yef",
+                            "durée" : 30
+                        }
+                    ]
+                },
+                {
+                    "titre" : "Création d'interface graphique avec Java swing",
+                    "description" : "Tutorial Java swing qui aborde le developpemnt des graphical user interfaces (GUIs) pour les applications et applets utilisant Swing components",
+                    "durée" : 30,
+                    "note": [
+                        {
+                            "note1": "À la fin de ce cours, vous serez capable des interfaces graphiques avec java swing"
+                        } 
+                    ],
+                    "videos" : [
+                        {
+                            "titre" : "Les bases de java swing",
+                            "description" : "",
                             "url" : "https://www.youtube.com/watch?v=gfkTfcpWqAY&list=PLTjRvDozrdlz3_FPXwb6lX_HoGXa09Yef",
                             "durée" : 30
                         }
