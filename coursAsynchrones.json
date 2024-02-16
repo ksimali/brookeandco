@@ -8,25 +8,81 @@
             "notation": 4,
             "sections":[
                 {
-                    "titre" : "",
-                    "description" : "",
+                    "titre" : "Javascript de A à Z",
+                    "description" : "Apprendre a programmer avec Javascript",
                     "durée" : 60,
                     "note": [
                         {
-                            "note1": ""
+                            "note1": "Dans ce cours, vous découvrirez les bases du langage de programmation JavaScript : sa syntaxe, sa logique de programmation."
                         }
                     ],
                     "videos" : [
                         {
-                            "titre" : "",
+                            "titre" : "Welcome to web programming",
                             "description" : "",
-                            "url" : "https://",
+                            "url" : "https://www.youtube.com/watch?v=mHuQJVAQrUg",
                             "durée" : 30
                         },
                         {
                             "titre" : "",
                             "description" : "",
-                            "url" : "https://",
+                            "url" : "https://www.youtube.com/watch?v=W6NZfCO5SIk",
+                            "durée" : 30
+                        }
+                    ]
+                }
+            ]
+
+        },
+        {
+            "image": "python.jpg",
+            "cout": 60.00,
+            "description": " Maîtrisez Python grâce a ce superbe cours très complet!",
+            "durée": 30,
+            "notation": 4,
+            "sections":[
+                {
+                    "titre" : "Python Full Course for beginners",
+                    "description" : "Dans ce cours, vous allez enregistrer des informations en tant que données en Python. Vous allez contrôler la logique dans votre code avec des conditions, des boucles et des fonctions. ",
+                    "durée" : 30,
+                    "note": [
+                        {
+                            "note1": "À la fin de ce cours, vous serez capable de : Créer des données et Gérer la logique d'un programme dans Python"
+                        }
+                    ],
+                    "videos" : [
+                        {
+                            "titre" : "Python Full Course for beginners",
+                            "description" : "Python tutorial - Python full course for beginners - Go from Zero to Hero with Python (includes machine learning & web development projects).",
+                            "url" : "https://www.youtube.com/watch?v=_uQrJ0TkZlc",
+                            "durée" : 30
+                        }
+                    ]
+                }
+            ]
+
+        },
+        {
+            "image": "csharp.jpg",
+            "cout": 60.00,
+            "description": "Maitrisez le langage c# pas à pas",
+            "durée": 30,
+            "notation": 4,
+            "sections":[
+                {
+                    "titre" : "C# Full Course for beginners",
+                    "description" : "C# is a popular programming language and everyday people use to build games, desktop, mobile, and web applications.",
+                    "durée" : 30,
+                    "note": [
+                        {
+                            "note1": "À la fin de ce cours, vous serez capable de : Créer des données et Gérer la logique d'un programme C#"
+                        } 
+                    ],
+                    "videos" : [
+                        {
+                            "titre" : "C# Full Course for beginners",
+                            "description" : "this C# tutorial for beginners to learn the fundamentals of C# (pronounced C sharp) and .NET framework.",
+                            "url" : "https://www.youtube.com/watch?v=gfkTfcpWqAY&list=PLTjRvDozrdlz3_FPXwb6lX_HoGXa09Yef",
                             "durée" : 30
                         }
                     ]
