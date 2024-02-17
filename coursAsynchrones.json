@@ -1,6 +1,7 @@
 {
     "liste" :[
         {
+            "id":"AS01",
             "image": "javascript.jpg",
             "cout": 60.00,
             "description": " Maîtrisez Javascript grâce a ce superbe cours très complet!",
@@ -35,6 +36,7 @@
 
         },
         {
+            "id":"AS02",
             "image": "python.jpg",
             "cout": 60.00,
             "description": " Maîtrisez Python grâce a ce superbe cours très complet!",
@@ -63,6 +65,7 @@
 
         },
         {
+            "id":"AS03",
             "image": "csharp.jpg",
             "cout": 60.00,
             "description": "Maitrisez le langage c# pas à pas",
@@ -145,7 +148,7 @@
                     "videos" : [
                         {
                             "titre" : "Les bases de java swing",
-                            "description" : "",
+                            "description" : "Exposé complet des concept de base à maitriser en java swing",
                             "url" : "https://www.youtube.com/watch?v=gfkTfcpWqAY&list=PLTjRvDozrdlz3_FPXwb6lX_HoGXa09Yef",
                             "durée" : 30
                         }
