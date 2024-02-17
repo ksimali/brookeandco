@@ -1,7 +1,7 @@
 {
     "populaires": [
         {
-            "id": 1,
+            "id": "CP01",
             "titre": "Formation complète en développement Web",
             "description": "Apprenez le développement Web de A à Z avec notre cours en ligne.",
             "prix": 199.99,
@@ -9,14 +9,14 @@
             "lien": "https://example.com/courses/web-development"
         },
         {
-            "id": 2,
+            "id": "CP0",
             "titre": "Formation avancée en Python",
             "description": "Maîtrisez les concepts avancés de Python avec notre formation en ligne.",
             "image": "python-advanced.jpg",
             "lien": "https://example.com/courses/python-advanced"
         },
         {
-            "id": 3,
+            "id": "CP03",
             "titre": "Formation en marketing digital",
             "description": "Découvrez les stratégies de marketing digital les plus efficaces avec notre cours en ligne.",
             "prix": 129.99,
@@ -24,7 +24,7 @@
             "lien": "https://example.com/courses/digital-marketing"
         },
         {
-            "id": 4,
+            "id": "CP04",
             "titre": "Formation en design graphique",
             "description": "Apprenez à concevoir des graphiques attrayants avec notre cours en ligne.",
             "prix": 99.99,
@@ -32,7 +32,7 @@
             "lien": "https://example.com/courses/graphic-design"
         },
         {
-            "id":5,
+            "id":"CP05",
             "titre": "Javascript de A à Z",
             "description": " Maîtrisez Javascript grâce a ce superbe cours très complet!",
             "prix": 60.00,
@@ -40,7 +40,7 @@
             "lien": "https://example.com/courses/javascript"
         },
         {
-            "id":"6",
+            "id":"CP06",
             "titre":"Le cours complet de React.JS pour débutants",
             "description":"Créez des applications Web robustes, rapides, conviviales et réactives.",
             "prix": 60.00,
