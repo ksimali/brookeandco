@@ -1,40 +1,40 @@
 {
     "promotions": [
         {
-            "id": 1,
-            "titre": "Formation complète en développement Web",
-            "description": "Apprenez le développement Web de A à Z avec notre cours en ligne.",
+            "id": "AS02",
+            "titre": "Python Full Course for beginners",
+            "description": "Dans ce cours, vous allez enregistrer des informations en tant que données en Python. Vous allez contrôler la logique dans votre code avec des conditions, des boucles et des fonctions.",
             "prix": 199.99,
             "rabais": 50,
-            "image": "https://example.com/images/web-development.jpg",
-            "lien": "https://example.com/courses/web-development"
+            "image": "https://example.com/images/python.jpg",
+            "lien": "https://example.com/courses/python"
         },
         {
-            "id": 2,
-            "titre": "Formation avancée en Python",
-            "description": "Maîtrisez les concepts avancés de Python avec notre formation en ligne.",
+            "id": "AS03",
+            "titre": "C# Full Course for beginners",
+            "description": "C# is a popular programming language and everyday people use to build games, desktop, mobile, and web applications.",
             "prix": 149.99,
             "rabais": 30,
-            "image": "https://example.com/images/python-advanced.jpg",
-            "lien": "https://example.com/courses/python-advanced"
+            "image": "https://example.com/images/csharp.jpg",
+            "lien": "https://example.com/courses/csharp"
         },
         {
-            "id": 3,
-            "titre": "Formation en marketing digital",
-            "description": "Découvrez les stratégies de marketing digital les plus efficaces avec notre cours en ligne.",
+            "id": "CS01",
+            "titre": "Atelier de Développement Web",
+            "description": "Ce cours pratique explore les technologies web modernes.",
             "prix": 129.99,
             "rabais": 25,
-            "image": "https://example.com/images/digital-marketing.jpg",
-            "lien": "https://example.com/courses/digital-marketing"
+            "image": "https://example.com/images/developpement-web.jpg",
+            "lien": "https://example.com/courses/developpement-web"
         },
         {
-            "id": 4,
-            "titre": "Formation en design graphique",
-            "description": "Apprenez à concevoir des graphiques attrayants avec notre cours en ligne.",
+            "id": "CS03",
+            "titre": "Le cours complet de React.JS pour débutants",
+            "description": "Créez des applications Web robustes, rapides, conviviales et réactives.",
             "prix": 99.99,
             "rabais": 20,
-            "image": "https://example.com/images/graphic-design.jpg",
-            "lien": "https://example.com/courses/graphic-design"
+            "image": "https://example.com/images/react.jpg",
+            "lien": "https://example.com/courses/react"
         }
     ]
 }
