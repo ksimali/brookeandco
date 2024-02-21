@@ -40,10 +40,10 @@ header .searchList{
     background-color: #f7f9fa;
     margin: 0 1.2rem;
     align-items: center;
+    padding-left: 20px;
 }
 #searchBarForm{
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
     height: 100%;
     padding: 0 2.5rem 0 0;
@@ -53,12 +53,10 @@ header .searchList{
     border: 0; /*enleve les bordures du input*/
     flex: 1;
 }
-header > button{
-    border: none;
-    height: 4.5rem;
-}
+
 .nav-links{
     display: flex;
+    font-size: 0.9rem;
     gap: 30px;
     align-items: center;
 }
@@ -69,8 +67,8 @@ header > button{
     border-radius: 50px;
 }
 .cart > a > img{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 #searchBarForm{
     align-items: center;
