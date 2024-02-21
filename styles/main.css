@@ -34,7 +34,7 @@ header .searchList{
 }
 .searchBar{
     flex-grow: 0.6;
-    height: 2rem;
+    height: 2.4rem;
     border: 1px solid #2d2f31;
     border-radius: 9999px;
     background-color: #f7f9fa;
