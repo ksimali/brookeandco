@@ -8,8 +8,11 @@ body{
 }
 .wrapper{
    display: flex;
-   min-height: 100vh;
-   flex-direction: column;
+   min-height: 100vh;/* hauteur du wrapper a 100vh = 100% du viewport height*/
+   flex-direction: column; /* affichage en colonne */
+}
+main{
+    flex-grow: 1; /* section main occupe l'espace disponible*/
 }
 /********************************* HEADER SECTION *********************************/
 /* aligner les elements du header*/
@@ -21,10 +24,12 @@ header{
     align-items: center;
     padding: 0 30px 0 30px;
 }
-/* remove style on */
-header > .logo{
+/* remove style on logo*/
+header .logo{
     text-decoration: none;
+    color: #9ACD32;
 }
+
 /* remove bullet on unordered list */
 header ul {
     list-style-type: none;
@@ -33,6 +38,21 @@ header ul {
 header .searchList{
     display: flex;
     gap: 50px;
+}
+.exploreButton{
+    border: none;
+    background: none;
+    height: 40px;
+    width: 120px;
+    min-width: 120px;
+    margin: auto 25px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: 	#9ACD32;
+    border-radius: 25px;
+}
+.exploreButtonArrow{
+    margin-left: 5px;
 }
 .searchBar{
     flex-grow: 0.6;
@@ -52,19 +72,35 @@ header .searchList{
 }
 #searchBarForm > input{
     background-color: transparent;
+    outline: none;
+    font-size: 1rem;
     border: 0; /*enleve les bordures du input*/
     flex: 1;
 }
+.searchBarButton{
+    border: none;
+    background-color:#9ACD32;
+    border-radius: 25px 25px;
+    padding: 5px 5px;
 
-.nav-links{
-    display: flex;
-    font-size: 0.9rem;
-    gap: 30px;
-    align-items: center;
 }
-.signIn, .register{
+.nav-links{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    gap: 30px;
+}
+.signIn{
     background-color: transparent;
     border: 1px solid #2d2f31;
+    padding:10px 20px ;
+    border-radius: 50px;
+}
+.register{
+    background-color:#9ACD32;
+    color: whitesmoke;
     padding:10px 20px ;
     border-radius: 50px;
 }
@@ -76,6 +112,10 @@ header .searchList{
     align-items: center;
 }
 
+/********************************* MAIN SECTION *********************************/
+
+
+
 /********************************* FOOTER SECTION *********************************/
 
 .footer, .footer-section{
@@ -83,12 +123,7 @@ header .searchList{
     border-top: 1px solid #3e4143;;
     color: #ffffff;
 }
-.footer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
+
 .fs1{
     padding: 1rem 0;
     padding-left: 2.4rem;
@@ -122,6 +157,7 @@ li{
     align-items: center;
     padding-top: 3rem;
 }
-.logo{
+footer .logo{
     text-decoration: none;
+    color: #9ACD32;
 }
