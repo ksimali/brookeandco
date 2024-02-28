@@ -14,6 +14,9 @@ body{
 main{
     flex-grow: 1; /* section main occupe l'espace disponible*/
 }
+a{
+    text-decoration: none;
+}
 /********************************* HEADER SECTION *********************************/
 /* aligner les elements du header*/
 header{
@@ -42,6 +45,7 @@ header .searchList{
 .exploreButton{
     border: none;
     background: none;
+    color: whitesmoke;
     height: 40px;
     width: 120px;
     min-width: 120px;
@@ -50,6 +54,11 @@ header .searchList{
     font-weight: bold;
     background-color: 	#9ACD32;
     border-radius: 25px;
+}
+.exploreButton:hover{
+    border:#9ACD32;
+    background-color: whitesmoke;
+    color:#9ACD32;
 }
 .exploreButtonArrow{
     margin-left: 5px;
@@ -92,17 +101,26 @@ header .searchList{
     font-weight: bold;
     gap: 30px;
 }
+
 .signIn{
     background-color: transparent;
     border: 1px solid #2d2f31;
     padding:10px 20px ;
     border-radius: 50px;
 }
+.signIn a{
+    color:#2d2f31;
+}
 .register{
     background-color:#9ACD32;
-    color: whitesmoke;
     padding:10px 20px ;
     border-radius: 50px;
+}
+.register a{
+    color: white;
+}
+.signIn:hover, .register:hover{
+    cursor:pointer;
 }
 .cart > a > img{
     width: 25px;
