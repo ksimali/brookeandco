@@ -1,6 +1,5 @@
-/********************** Login Form Styles **********************/
-.login-main{
-
+/********************** Login/Register Form Styles **********************/
+.form-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,7 +7,7 @@
     min-height: 90vh;
     background-color: whitesmoke;
 }
-.login-wrapper{
+.form-wrapper{
     width: 400px;
     background-color: white;
     border-radius: 40px;
@@ -20,7 +19,7 @@
     text-align: center;
     margin-bottom: 40px;
 }
-#loginForm{
+#loginForm, #registerForm{
     text-align: center;
 }
 label{
@@ -39,12 +38,15 @@ input{
     font-size: 1em;
     color: #2d2f31;
 }
-.toRegister{
+.toRegister, .toLogin{
     font-size: small;
     margin-bottom: 30px;
 }
-
-.loginBtn{
+.linkToLogin, .linkToRegister{
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.submitButton{
     width: 50%;
     border: none;
     background-color: #9ACD32;
@@ -54,9 +56,10 @@ input{
     font-weight: bold;
     color: white;
 }
-.loginBtn:hover{
+.submitButton:hover{
     background-color: white;
     border: 1px solid #9ACD32;
     color: #9ACD32;
     cursor: pointer;
 }
+
