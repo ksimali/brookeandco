@@ -47,26 +47,26 @@
         <main class="login-main">
             <div class="login-wrapper">
                 <h2 class="title"> Connexion </h2>
-            <form action="" method="" novalidate>
-                <div class="">
-                    <label for="email" class="">Courriel</label>
-                    <input type="text" class="" id="email" name="email" placeholder="christiandior@dior.ca">
-                    <div class="error" id="email-error"></div>
-                </div>
-                <div class="">
-                    <label for="password" class="">Mot de passe</label>
-                    <input type="password" class="" id="password" name="password" placeholder="mot de passe">
-                    <div class="error" id="password-error"></div>
-                </div>
-                <div class="toRegister"> 
-                    Pas encore Client ?
-                    <a href="/pages/register.html">Cliquez ici</a>
-                    pour s'inscrire
-                </div>
-                <div class="lbContainer">
-                    <button class="loginBtn">Connexion</button>
-                </div>
-            </form>
+                <form action="" method="" id="loginForm" novalidate>
+                    <div class="courriel-container">
+                        <label for="email" class="label">Courriel</label>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="christiandior@dior.ca">
+                        <div class="error" id="email-error"></div>
+                    </div>
+                    <div class="password-container">
+                        <label for="password" class="lb-password">Mot de passe</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="mot de passe">
+                        <div class="error" id="password-error"></div>
+                    </div>
+                    <div class="toRegister"> 
+                        Pas encore Client ?
+                        <a href="/pages/register.html">Cliquez ici</a>
+                        pour s'inscrire
+                    </div>
+                    <div class="buttonContainer">
+                        <button class="loginBtn">Connexion</button>
+                    </div>
+                </form>
             </div>
             
     
