@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/forms.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header Section -->
+        <header>  
+            <div class = "searchList">
+                <div class="logo-container">
+                    <a href="/index.html" class="logo">
+                        <h2>Brookeandco</h2>
+                    </a> 
+                </div>
+                <button class= "exploreButton">
+                        <span>Explorer</span>
+                        <svg class="exploreButtonArrow " viewBox="0 0 32 32" width="9" height="9"><path fill="#fff" d="M30.054 14.429l-13.25 13.232q-0.339 0.339-0.804 0.339t-0.804-0.339l-13.25-13.232q-0.339-0.339-0.339-0.813t0.339-0.813l2.964-2.946q0.339-0.339 0.804-0.339t0.804 0.339l9.482 9.482 9.482-9.482q0.339-0.339 0.804-0.339t0.804 0.339l2.964 2.946q0.339 0.339 0.339 0.813t-0.339 0.813z"></path></svg>
+                </button>
+                <div class="scrollingMenu">
+
+                </div>
+            </div>
+            <div class="searchBar">
+                <form action="" id="searchBarForm" role="search">
+                    <input type="search" id="query" name="query"
+                        placeholder="Rechercher"
+                        aria-label ="Rechercher a travers le contenu du site"
+                        >
+                    <button type="submit" class="searchBarButton">
+                        go!
+                    </button>
+                </form>
+            </div>
+          
+            <ul class="nav-links">
+                <li class="cart"><a href="#"><img src="/images/shopping-cart.png" alt=""></a></li>
+                <li class="signIn"><a href="/pages/login.html">Connexion</a></li>
+                <li class="register"><a href="/pages/register.html">Inscription</a></li>
+            </ul>
+        </header>
+        <!-- Register Main Section -->
+        <main class="form-container">
+            <div class="form-wrapper">
+                <h2 class="title"> INSCRIPTION </h2>
+                <form action="" method="" id="registerForm" novalidate>
+                    <div class="form-group">
+                        <label for="name" class="text-black">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="christian">
+                        <div class="error" id="email-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="text-black">Courriel</label>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="christiandior@dior.ca">
+                        <div class="error" id="email-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="text-black">Mot de passe</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="mot de passe">
+                        <div class="error" id="password-error"></div>
+                    </div>
+                    <div class="toLogin"> 
+                        Vous avez déjà un compte ?
+                        <a href="/pages/login.html" class="linkToLogin">Se connecter</a>
+                    </div>
+                    <div class="buttonContainer">
+                        <button class="submitButton">Inscription</button>
+                    </div>
+                </form>
+            </div>
+            
+        </main>
+        <!-- Footer section -->
+        <footer class="footer">
+            <div class="footer-section fs1">
+                <h3> Les meilleures entreprises choisissent Brookeandco Business pour fomer leurs collaborateurs</h2>
+            </div>
+            <div class="footer-section fs2">
+                <div class="links">
+                    <ul>
+                        <li>
+                            <a href="" class="link" target="_blank" >Udemy Business</a>
+                        </li>
+                        <li>
+                            <a class="link" href="">Enseigner sur Udemy</a>
+                        </li>
+                        <li>
+                            <a class="link" href="" target="_blank">Téléchargez l'application</a>
+                        </li>
+                        <li>
+                            <a class="link" href="">À propos d'Udemy</a>
+                        </li>
+                        <li>
+                            <a class="link" href="">Contactez-nous</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a class="link" href="">Carrières</a>
+                        </li>
+                        <li>
+                            <a class="link" href="">Blog</a>
+                        </li>
+                        <li>
+                            <a class="link" href="">Aide et support</a>
+                        </li>
+                        <li>
+                            <a class="link" href="">Affilié</a>
+                        </li>
+                        <li>
+                            <a class="link" href="">Investisseurs</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a class="link" href="">Conditions</a>
+                        </li>
+                        <li>
+                            <a class="link" href="">Politique de confidentialité</a>
+                        </li>
+                        <li>
+                            <a class="link" href="">Paramètres des cookies</a>
+                        </li>
+                        <li>
+                            <a class="link" href="">Plan du site</a>
+                        </li>
+                        <li>
+                            <a class="link" href="">Déclaration d'accessibilité</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="logo-copyright">
+                    <div class="logo-container">
+                        <a href="/" class="logo">
+                            <h3>Brookeandco</h3>
+                        </a>
+                    </div>
+                    <div class="copyright-container">© 2024 Brookeandco, Inc.</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="/scripts/main.js"></script>
+    <script src="/scripts/formValidation.js"></script>
+</body>
+</html>
