@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/forms.css">
 </head>
 <body>
     <div class="wrapper">
+        <!-- Header Section -->
         <header>  
             <div class = "searchList">
                 <div class="logo-container">
@@ -41,9 +43,35 @@
                 <li class="register"><a href="/">Inscription</a></li>
             </ul>
         </header>
-        <main>
+        <!-- Login Main Section -->
+        <main class="login-main">
+            <div class="login-wrapper">
+                <h2 class="title"> Connexion </h2>
+            <form action="" method="" novalidate>
+                <div class="">
+                    <label for="email" class="">Courriel</label>
+                    <input type="text" class="" id="email" name="email" placeholder="christiandior@dior.ca">
+                    <div class="error" id="email-error"></div>
+                </div>
+                <div class="">
+                    <label for="password" class="">Mot de passe</label>
+                    <input type="password" class="" id="password" name="password" placeholder="mot de passe">
+                    <div class="error" id="password-error"></div>
+                </div>
+                <div class="toRegister"> 
+                    Pas encore Client ?
+                    <a href="/pages/register.html">Cliquez ici</a>
+                    pour s'inscrire
+                </div>
+                <div class="lbContainer">
+                    <button class="loginBtn">Connexion</button>
+                </div>
+            </form>
+            </div>
+            
     
         </main>
+        <!-- Footer section -->
         <footer class="footer">
             <div class="footer-section fs1">
                 <h3> Les meilleures entreprises choisissent Brookeandco Business pour fomer leurs collaborateurs</h2>
