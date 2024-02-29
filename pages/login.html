@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brooke and Co</title>
+    <title>Login</title>
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/forms.css">
 </head>
 <body>
     <div class="wrapper">
+        <!-- Header Section -->
         <header>  
             <div class = "searchList">
                 <div class="logo-container">
@@ -41,9 +43,35 @@
                 <li class="register"><a href="/">Inscription</a></li>
             </ul>
         </header>
-        <main>
+        <!-- Login Main Section -->
+        <main class="login-main">
+            <div class="login-wrapper">
+                <h2 class="title"> Connexion </h2>
+                <form action="" method="" id="loginForm" novalidate>
+                    <div class="form-group">
+                        <label for="email" class="text-black">Courriel</label>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="christiandior@dior.ca">
+                        <div class="error" id="email-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="text-black">Mot de passe</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="mot de passe">
+                        <div class="error" id="password-error"></div>
+                    </div>
+                    <div class="toRegister"> 
+                        Pas encore Client ?
+                        <a href="/pages/register.html">Cliquez ici</a>
+                        pour s'inscrire
+                    </div>
+                    <div class="buttonContainer">
+                        <button class="loginBtn">Connexion</button>
+                    </div>
+                </form>
+            </div>
+            
     
         </main>
+        <!-- Footer section -->
         <footer class="footer">
             <div class="footer-section fs1">
                 <h3> Les meilleures entreprises choisissent Brookeandco Business pour fomer leurs collaborateurs</h2>
@@ -115,5 +143,6 @@
     </div>
     
     <script src="/scripts/main.js"></script>
+    <script src="/scripts/formValidation.js"></script>
 </body>
 </html>
