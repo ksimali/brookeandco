@@ -8,6 +8,28 @@
     }
     .nav-links {
         display: none; /* Masquer la navigation principale sur les petits écrans */
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        z-index: 1;
+    }
+    .nav-links.open{
+        display: flex; /*Afficher la navigaion lorque le menu est ouver*/
+    }
+    .nav-links li{
+        margin: 10px 0; /* espacement entre les éléments du menu */
+    }
+
+    .nav-toggle{
+        display: block;
+        cursor: pointer;
+        color: #FFFFFF;
+        background-color:  #333;
+        padding: 10px;
     }
 }
 
@@ -125,7 +147,6 @@ header .searchList{
     align-items: center;
     font-size: 0.9rem;
     font-weight: bold;
-    gap: 30px;
 }
 
 .signIn{
