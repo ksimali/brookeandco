@@ -199,6 +199,9 @@ header .searchList{
 .categorie-card{
     margin: 0 1.6rem 1.6rem 0
 }
+.categorie-card-title{
+    padding: 0.8rem 0 1.6rem 0.8rem;
+}
 .categorie-img-wrapper{
     overflow: hidden;
 }
