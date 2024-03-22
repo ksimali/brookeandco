@@ -186,6 +186,27 @@ header .searchList{
 
 /* carousel section */
 
+/* Section les meilleurs catégories */
+.top-categories{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content:center;
+}
+.top-categories-title{
+    margin: 0 0 3rem;
+}
+.categorie-card{
+    margin: 0 1.6rem 1.6rem 0
+}
+.categorie-img-wrapper{
+    overflow: hidden;
+}
+.categorie-img-wrapper img{
+    border-radius: 25px;
+    height: 300px;
+    width: 300px;
+}
 /* les formations recommandés par catégorie*/
 .component-margin{
     margin-top: 6.4rem;
