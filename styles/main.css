@@ -241,7 +241,6 @@ header .searchList{
     overflow: hidden;
 }
 .categorie-img-wrapper img{
-    border-radius: 25px;
     height: 300px;
     width: 300px;
 }
