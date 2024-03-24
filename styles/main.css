@@ -186,6 +186,25 @@ header .searchList{
 
 /* carousel section */
 
+/* section partenaires */
+.partners-section{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 300;
+}
+.partners-logo-heading{
+    margin-bottom: 50px;
+}
+.partners-logo-module{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1132px;
+    padding : 0 10px;
+}
+
 /* Section les meilleurs catégories */
 .top-categories{
     display: flex;
@@ -195,6 +214,15 @@ header .searchList{
 }
 .top-categories-title{
     margin: 0 0 3rem;
+}
+.top-categories a{
+    text-decoration: none;
+}
+.top-categories a span{
+    font-size: 1.3rem;
+    color: black;
+    font-weight: bold;
+    line-height: 1.2rem;
 }
 .categorie-card{
     margin: 0 1.6rem 1.6rem 0
