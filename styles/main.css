@@ -195,10 +195,13 @@ header .searchList{
 }
 .partners-logo-heading{
     margin-bottom: 50px;
+    padding-top: 50px;
 }
 .partners-logo-module{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
     align-items: center;
     margin: 0 auto;
     max-width: 1132px;
@@ -206,6 +209,7 @@ header .searchList{
 }
 .partners-logo-module a > img{
     max-height: 50px;
+    margin-bottom: 50px;
 }
 
 /* Section les meilleurs catégories */
