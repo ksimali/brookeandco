@@ -147,6 +147,9 @@ header .searchList{
     font-size: 1em;
 
 }
+.searchBarButton:hover, .nav-toggle {
+    cursor: pointer
+}
 .nav-links{
     padding-top: 10px;
     display: flex;
