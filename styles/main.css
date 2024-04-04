@@ -189,7 +189,6 @@ header .searchList{
 .carousel-container {
     width: 100%;
     height: 100%;
-    margin: 0 20px 0 20px;
 }
 .slideshow-container {
         width: 100%;
@@ -282,7 +281,30 @@ header .searchList{
     max-height: 50px;
     margin-bottom: 50px;
 }
+/* section les cours populaires */
+.popular-courses{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content:center;
+}
+.popular-courses-title{
+    margin: 0 0 3rem;
+}
 
+.popular-card{
+    margin: 0 1.6rem 1.6rem 0
+}
+.popular-card-title{
+    padding: 0.8rem 0 1.6rem 0.8rem;
+}
+.popular-img-wrapper{
+    overflow: hidden;
+}
+.popular-img-wrapper img{
+    height: 300px;
+    width: 300px;
+}
 /* Section les meilleurs catégories */
 .top-categories{
     display: flex;
