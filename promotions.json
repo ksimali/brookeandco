@@ -1,7 +1,16 @@
 {
     "promotions": [
         {
-            "id": "AS02",
+            "id": "CPR01",
+            "titre": "Javascript | Formation complète",
+            "description": "Apprenez Python en partant de 0, et créez tous types de projets : Sites Web, Apps mobile, Jeux, Scripts, Hacking éthique",
+            "prix": 199.99,
+            "rabais": 50,
+            "image": "/images/javascript-logo.png",
+            "lien": "https://example.com/courses/python"
+        },
+        {
+            "id": "CPR02",
             "titre": "Développeur Python | Formation complète",
             "description": "Apprenez Python en partant de 0, et créez tous types de projets : Sites Web, Apps mobile, Jeux, Scripts, Hacking éthique",
             "prix": 199.99,
@@ -10,31 +19,41 @@
             "lien": "https://example.com/courses/python"
         },
         {
-            "id": "AS03",
+            "id": "CPR03",
             "titre": "Développeur C# | Formation complète",
-            "description": "Apprenez la programmation avec le tout dernier langage C# 10 et créez des applications web puissantes avec .NET Core 6",
+            "description": "Apprenez la programmation avec le langage C# 10 et créez des applications web puissantes avec .NET Core 6",
             "prix": 149.99,
             "rabais": 30,
-            "image": "https://example.com/images/csharp.jpg",
+            "image": "/images/csharp.jpg",
             "lien": "https://example.com/courses/csharp"
         },
         {
-            "id": "CS01",
+            "id": "CCPR04",
             "titre": "Atelier de Développement Web",
             "description": "Ce cours pratique explore les technologies web modernes.",
             "prix": 129.99,
             "rabais": 25,
-            "image": "https://example.com/images/developpement-web.jpg",
+            "image": "/images/developpement-web.jpeg",
             "lien": "https://example.com/courses/developpement-web"
         },
         {
-            "id": "CS03",
+            "id": "CPR05",
             "titre": "Le cours complet de React.JS pour débutants",
             "description": "Créez des applications Web robustes, rapides, conviviales et réactives.",
             "prix": 99.99,
             "rabais": 20,
-            "image": "https://example.com/images/react.jpg",
+            "image": "./images/react-js-complet.jpeg",
+            "lien": "https://example.com/courses/react"
+        },
+        {
+            "id": "CPR06",
+            "titre": "Développeur Java | Master training",
+            "description": "Créez des applications  robustes, conviviales et, multiplateforme.",
+            "prix": 99.99,
+            "rabais": 20,
+            "image": "./images/java-logo.svg",
             "lien": "https://example.com/courses/react"
         }
+
     ]
 }
