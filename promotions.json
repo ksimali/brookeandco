@@ -2,17 +2,17 @@
     "promotions": [
         {
             "id": "AS02",
-            "titre": "Python Full Course for beginners",
-            "description": "Dans ce cours, vous allez enregistrer des informations en tant que données en Python. Vous allez contrôler la logique dans votre code avec des conditions, des boucles et des fonctions.",
+            "titre": "Développeur Python | Formation complète",
+            "description": "Apprenez Python en partant de 0, et créez tous types de projets : Sites Web, Apps mobile, Jeux, Scripts, Hacking éthique",
             "prix": 199.99,
             "rabais": 50,
-            "image": "https://example.com/images/python.jpg",
+            "image": "/images/python.jpg",
             "lien": "https://example.com/courses/python"
         },
         {
             "id": "AS03",
-            "titre": "C# Full Course for beginners",
-            "description": "C# is a popular programming language and everyday people use to build games, desktop, mobile, and web applications.",
+            "titre": "Développeur C# | Formation complète",
+            "description": "Apprenez la programmation avec le tout dernier langage C# 10 et créez des applications web puissantes avec .NET Core 6",
             "prix": 149.99,
             "rabais": 30,
             "image": "https://example.com/images/csharp.jpg",
