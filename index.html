@@ -40,11 +40,359 @@
             <ul class="nav-links">
                 <li class="cart"><a href="#"><img src="/images/shopping-cart.png" alt=""></a></li>
                 <li class="signIn"><a href="/pages/login.html">Connexion</a></li>
-                <li class="register"><a href="/">Inscription</a></li>
+                <li class="register"><a href="/pages/register.html">Inscription</a></li>
             </ul>
         </header>
         <main>
+            <!-- section carousel -->
+            <section class="carousel-container">
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">  
+                        <img src="./images/javascript-logo.png">
+                        <div class="cta-container">
+                            <h1 class="cta-title">JavaScript | la formation ULTIME </h1>
+                            <p class="cta-subtitle"> Maîtrisez Javascript grâce au cours le plus complet sur internet ! 
+                                Projets, exercices, quiz, ES8 et bien d’autres !
+                            </p>
+                            <a class="cta-btn" href="" target="_blank"> Inscrivez-vous</a>
+                        </div>
+                    </div>
+                    <div class="mySlides fade">  
+                        <img src="./images/python.jpeg">
+                        <div class="cta-container">
+                            <h1 class="cta-title">Développeur Python | Formation complète</h1>
+                            <p class="cta-subtitle">Apprenez Python en partant de 0, et créez tous types de projets :
+                                Sites Web, Apps mobile, Jeux, Scripts, Hacking éthique
+                            </p>
+                            <a class="cta-btn" href="" target="_blank"> Inscrivez-vous</a>
+                        </div>
+                    </div>
+                    <div class="mySlides fade"> 
+                        <img src="./images/c-sharp.webp">
+                        <div class="cta-container">
+                            <h1 class="cta-title">Développeur C# | Formation complète</h1>
+                            <p class="cta-subtitle">Apprenez la programmation avec le langage C# 10 
+                                et créez des applications web puissantes avec .NET Core 6</p>
+                            <a class="cta-btn" href="" target="_blank"> Inscrivez-vous</a>
+                        </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="./images/webdev-course.webp">
+                        <div class="cta-container">
+                            <h1 class="cta-title">Atelier de Développement Web</h1>
+                            <p class="cta-subtitle">Cours de développement web explore les technologies web modernes.</p>
+                            <a class="cta-btn" href="" target="_blank"> Inscrivez-vous</a>
+                        </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="./images/react-js-complet.jpeg">
+                        <div class="cta-container">
+                            <h1 class="cta-title">Le cours complet de React.JS pour débutants</h1>
+                            <p class="cta-subtitle">Créez des applications Web robustes, rapides, conviviales et réactives.</p>
+                            <a class="cta-btn" href="" target="_blank"> Inscrivez-vous</a>
+                        </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="./images/java-logo.svg">
+                        <div class="cta-container">
+                            <h1 class="cta-title">Développeur Java | Master training</h1>
+                            <p class="cta-subtitle">Créez des applications Web robustes,conviviales et multiplateforme.</p>
+                            <a class="cta-btn" href="" target="_blank"> Inscrivez-vous</a>
+                        </div>
+                    </div>
+
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <!-- The dots/circles -->
+                <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </section>
+            <!-- section les cours populaires -->
+            <section class="bb-container component-margin">
+                <h2 class="popular-courses-title"> Cours les plus populaires</h2>
+                <div class="popular-courses">
+                    <a class="popular-card" href="">
+                        <div class="categorie-img-wrapper">
+                            <img src="images/dev-web.jpeg" alt="img-dev">
+                        </div>
+                        <div class="popular-card-content">
+                            <div class="card-title-module"><h3>Développement Web complet</h3></div>
+                            <div class="formateur">noah barnay</div>
+                            <div class="rating">
+                                <span>Note&nbsp;: 4,6 sur&nbsp;5</span>
+                            </div>
+                            <div class="price"><span> 16,99</span></div>
+                        </div>
+                    </a>
+                    <a class="popular-card" href="">
+                        <div class="categorie-img-wrapper">
+                            <img src="images/graphic-design.jpeg" alt="img-dev">
+                        </div>
+                        <div class="popular-card-content">
+                            <div class="card-title-module"><h3>Design Graphique</h3></div>
+                            <div class="formateur">noah barnay</div>
+                            <div class="rating">
+                                <span>Note&nbsp;: 4,6 sur&nbsp;5</span>
+                            </div>
+                            <div class="price"><span> 16,99</span></div>
+                        </div>
+                    </a>
+                    <a class="popular-card" href="">
+                        <div class="categorie-img-wrapper">
+                            <img src="images/reactjs.png" alt="img-dev">
+                        </div>
+                        <div class="popular-card-content">
+                            <div class="card-title-module"><h3>React JS tutorial pour débutants</h3></div>
+                            <div class="formateur">noah barnay</div>
+                            <div class="rating">
+                                <span>Note&nbsp;: 4,6 sur&nbsp;5</span>
+                            </div>
+                            <div class="price"><span> 16,99</span></div>
+                        </div>
+                    </a>
+                    <a class="popular-card" href="">
+                        <div class="categorie-img-wrapper">
+                            <img src="images/python-fullCourses.jpeg" alt="img-dev">
+                        </div>
+                        <div class="popular-card-content">
+                            <div class="card-title-module"><h3>Formation avancée en Python</h3></div>
+                            <div class="formateur">noah barnay</div>
+                            <div class="rating">
+                                <span>Note&nbsp;: 4,6 sur&nbsp;5</span>
+                            </div>
+                            <div class="price"><span> 16,99</span></div>
+                        </div>
+                    </a>
+                    <a class="popular-card" href="">
+                        <div class="categorie-img-wrapper">
+                            <img src="images/digital-marketing.jpeg" alt="img-dev">
+                        </div>
+                        <div class="popular-card-content">
+                            <div class="card-title-module"><h3>Formation en marketing digital</h3></div>
+                            <div class="formateur">noah barnay</div>
+                            <div class="rating">
+                                <span>Note&nbsp;: 4,6 sur&nbsp;5</span>
+                            </div>
+                            <div class="price"><span> 16,99</span></div>
+                        </div>
+                    </a>
+                    <a class="popular-card" href="">
+                        <div class="categorie-img-wrapper">
+                            <img src="images/javascript.jpeg" alt="img-dev">
+                        </div>
+                        <div class="popular-card-content">
+                            <div class="card-title-module"><h3>Javascript de A à Z</h3></div>
+                            <div class="formateur">noah barnay</div>
+                            <div class="rating">
+                                <span>Note&nbsp;: 4,6 sur&nbsp;5</span>
+                            </div>
+                            <div class="price"><span> 16,99</span></div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <!-- section partners banners -->
+            <section class="component-margin partners-section background-pale">
+                <div class="bb-container">
+                    <h2 class="partners-logo-heading">
+                        <div>
+                            Nous collaborons avec plus de 300 université et entreprises a travers le monde
+                        </div> 
+                    </h2>
+                    <div class="partners-logo-module">
+                        <a href="https://developer.ibm.com/?lnk=flathl" target="_blank" class="partner-logo-image">
+                            <img src="images/ibm-icon.png" alt="logo-ibm">
+                        </a>
+                        <a href="https://grow.google/intl/en_in/certificates/" target="_blank" class="partner-logo-image">
+                            <img src="images/google-icon.png" alt="google-logo">
+                        </a>
+                        <a href="https://news.microsoft.com/skills/" target="_blank" class="partner-logo-image">
+                            <img src="images/microsoft-logo.png" alt="microsoft-logo">
+                        </a>
+                        <a href="https://openlearning.mit.edu/courses-programs" target="_blank" class="partner-logo-image">
+                            <img src="images/mit-logo.png" alt="mit-logo">
+                        </a>
+                        <a href="https://online.stanford.edu/free-courses" target="_blank" class="partner-logo-image">
+                            <img src="images/stanford-logo.png" alt="stanford-logo">
+                        </a>
+                        <a href="https://www.imperial.ac.uk/e-learning/" target="_blank" class="partner-logo-image">
+                            <img src="images/imperial-college.png" alt="imperial-college-logo">
+                        </a>
+                        <a href="https://online.yale.edu/" target="_blank"class="partner-logo-image">
+                            <img src="images/yale-logo.png" alt="yale-logo">
+                        </a>
+                    </div>
+                </div> 
+            </section>
+            <!-- section des meilleures catégories-->
+            <section class="bb-container component-margin">
+                <h2 class="top-categories-title"> Meilleures catégories</h2>
+                <div class="top-categories">
+                    <a class="categorie-card" href="">
+                        <div class="categorie-img-wrapper">
+                            <img src="images/web-dev.jpeg" alt="img-dev">
+                        </div>
+                        <div class="categorie-card-title">
+                            <span>Développement</span>
+                        </div>
+                    </a>
+                    <a class="categorie-card" href="">
+                        <div class="categorie-img-wrapper">
+                            <img src="images/digital-marketing.jpeg" alt="img-dev">
+                        </div>
+                        <div class="categorie-card-title">
+                            <span>Marketing digital</span>
+                        </div>
+                    </a>
+                    <a class="categorie-card" href="">
+                        <div class="categorie-img-wrapper">
+                            <img src="/images/web-desiging.jpeg" alt="img-dev">
+                        </div>
+                        <div class="categorie-card-title">
+                            <span>Design</span>
+                        </div>
+                    </a>
+                    <a class="categorie-card" href="">
+                        <div class="categorie-img-wrapper">
+                            <img src="images/dessin.jpeg" alt="img-dev">
+                        </div>
+                        <div class="categorie-card-title">
+                            <span>Dessin</span>
+                        </div>
+                    </a>
+                    <a class="categorie-card" href="">
+                        <div class="categorie-img-wrapper">
+                            <img src="images/cusine.jpeg" alt="img-dev">
+                        </div>
+                        <div class="categorie-card-title">
+                            <span>Cuisine</span>
+                        </div>
+                    </a>
+                    <a class="categorie-card" href="">
+                        <div class="categorie-img-wrapper">
+                            <img src="images/healthy-sport.jpeg" alt="img-dev">
+                        </div>
+                        <div class="categorie-card-title">
+                            <span>Sport</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <!-- section des formations recommandés par catégories -->
+            <div class="component-margin background-pale">
+                <section class="bb-container topics-section">
+                    <h2 class="bb-heading section-title"> Formations recommandés par catégorie</h2>
+                    <div class="topics-container">
+                        <!-- categorie Developement-->
+                        <div class="topics-category">
+                            <h3 class="topics-title">Developement</h3>
+                            <div>
+                                <div class="topics-infos">
+                                    <div>
+                                        <a href="/" class="topics-link">Python</a>
+                                    </div>
+                                    <div class="topics-count"> 200,000 apprenants</div>
+                                </div>
+                                <div class="topics-infos">
+                                    <div>
+                                        <a href="/" class="topics-link">Pseudo-code</a>
+                                    </div>
+                                    <div> 200,000 apprenants</div>
+                                </div >
+                                <div class="topics-infos">
+                                    <div>
+                                        <div>
+                                            <a href="/" class="topics-link">MySQL</a>
+                                        </div>
+                                        <div> 200,000 apprenants</div>
     
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- categorie Outils & Logiciels-->
+                        <div class="topics-category">
+                            <h3 class="topics-title">Outils & Logiciels</h3>
+                            <div>
+                                <div class="topics-infos">
+                                    <div>
+                                        <a href="/" class="topics-link">VSCode</a>
+                                    </div>
+                                    <div> 200,000 apprenants</div>
+                                </div>
+                                <div class="topics-infos">
+                                    <div>
+                                        <a href="/" class="topics-link">Git</a>
+                                    </div>
+                                    <div> 200,000 apprenants</div>
+
+                                </div>
+                                <div class="topics-infos">
+                                    <div>
+                                        <a href="/" class="topics-link">GitHub</a>
+                                    </div>
+                                    <div> 200,000 apprenants</div>
+                                </div>
+                                
+
+                            </div>
+                        </div>
+                        <!-- categorie web marketing-->
+                        <div class="topics-category">
+                            <h3 class="topics-title">Web marketing</h3>
+                            <div>
+                                <div class="topics-infos">
+                                    <div>
+                                        <a href="/" class="topics-link">SEO</a>
+                                    </div>
+                                    <div> 400,000 apprenants</div>
+                                </div>
+                                <div class="topics-infos">
+                                    <div>
+                                        <a href="/" class="topics-link">Google Analytics</a>
+                                    </div>
+                                    <div> 400,000 apprenants</div>
+                                </div>
+                                <div class="topics-infos"></div>
+
+                            </div>
+                        </div>
+                        <!-- catégorie design -->
+                        <div class="topics-category">
+                            <h3 class="topics-title">Web Design</h3>
+                            <div>
+                                <div class="topics-infos">
+                                    <div>
+                                        <a href="/" class="topics-link">Figma</a>
+                                    </div>
+                                    <div> 200,000 apprenants</div>
+
+                                </div>
+                                <div class="topics-infos">
+                                    <div>
+                                        <a href="/" class="topics-link">draw.io</a>
+                                    </div>
+                                    <div> 200,000 apprenants</div>
+                                </div>
+                                <div class="topics-infos"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
         <footer class="footer">
             <div class="footer-section fs1">
