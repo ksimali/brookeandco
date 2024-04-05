@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 /* media queries */
 /* Styles pour les écrans de petite taille */
@@ -14,7 +15,7 @@
         top: 50px;
         left: 0;
         right: 0;
-        background-color: #333;
+        background-color: #FFFFFF;
         z-index: 1;
     }
     .nav-links.open{
@@ -48,6 +49,11 @@
 }
 
 /* main styles*/
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
 body{
    font-family: "Roboto", sans-serif;
    color: #2d2f31;
@@ -139,7 +145,11 @@ header .searchList{
     background-color:#9ACD32;
     border-radius: 25px 25px;
     padding: 5px 5px;
+    font-size: 1em;
 
+}
+.searchBarButton:hover, .nav-toggle {
+    cursor: pointer
 }
 .nav-links{
     padding-top: 10px;
@@ -173,14 +183,235 @@ header .searchList{
     width: 25px;
     height: 25px;
 }
-#searchBarForm{
-    align-items: center;
-}
 
 /********************************* MAIN SECTION *********************************/
 
+/* carousel section */
+.carousel-container {
+    width: 100%;
+    height: 100%;
+}
+.slideshow-container {
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+        padding: 20px 20px;
+}
 
+.mySlides {
+    display: none;
+}
 
+.mySlides img {
+    width: 100%;
+    height: 600px;
+    border: 2px #9ACD32 solid;
+    border-radius: 50px;
+    box-shadow: 3px 3px #9ACD32, -1em 0 .4em #9ACD32;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #9ACD32;
+    font-weight: bold;
+    font-size: 26px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next{ 
+    right: 20px; /* positionner le bouton next a droite */
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot-container {
+    text-align: center;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.fade { /* fade animation */
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.cta-container{
+    position: absolute;
+    top: 30%;
+    padding-left: 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cta-subtitle{
+    width: 50%;
+}
+.cta-btn{
+    padding: 10px 40px;
+    width: 230px;
+    border-radius: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5em;
+    text-decoration: none;
+    background-color: #9ACD32;
+    border-radius: 50px 50px 50px 50px;
+    border-bottom: 5px solid #2980B9;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+.cta-btn:active{
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
+/* section partenaires */
+.partners-section{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 300;
+}
+.partners-logo-heading{
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+.partners-logo-module{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1132px;
+    padding: 0 10px;
+}
+.partners-logo-module a > img{
+    max-height: 50px;
+    margin-bottom: 50px;
+}
+/* section les cours populaires */
+.popular-courses{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content:center;
+}
+.popular-courses-title{
+    margin: 0 0 3rem;
+}
+
+.popular-card{
+    margin: 0 1.6rem 1.6rem 0
+}
+.popular-card-title{
+    padding: 0.8rem 0 1.6rem 0.8rem;
+}
+.popular-img-wrapper{
+    overflow: hidden;
+}
+.popular-img-wrapper img{
+    height: 300px;
+    width: 300px;
+}
+/* Section les meilleurs catégories */
+.top-categories{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content:center;
+}
+.top-categories-title{
+    margin: 0 0 3rem;
+}
+.top-categories a{
+    text-decoration: none;
+}
+.top-categories a span{
+    font-size: 1.3rem;
+    color: black;
+    font-weight: bold;
+    line-height: 1.2rem;
+}
+.categorie-card{
+    margin: 0 1.6rem 1.6rem 0
+}
+.categorie-card-title{
+    padding: 0.8rem 0 1.6rem 0.8rem;
+}
+.categorie-img-wrapper{
+    overflow: hidden;
+}
+.categorie-img-wrapper img{
+    height: 300px;
+    width: 300px;
+}
+/* les formations recommandés par catégorie*/
+.component-margin{
+    margin-top: 6.4rem;
+}
+.background-pale{
+    background-color: #f7f9fa;
+}
+.bb-container{
+    width: 100%;
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+}
+.topics-section{
+    padding: 6.4rem 2.4rem;
+}
+.section-title{
+    margin-bottom: 2.4rem;
+}
+.topics-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.topics-category{
+    padding-right: 0.8rem;
+    display: inline-block;
+    margin-bottom: 2.4rem;
+}
+.topics-title{
+    margin-bottom: 2.4rem;
+}
+.topics-infos{
+    margin-top: 2.4rem;
+}
+.topics-link{
+    font-weight: bolder;
+    text-decoration: underline;
+    color:#9ACD32;
+}
 /********************************* FOOTER SECTION *********************************/
 
 .footer, .footer-section{
