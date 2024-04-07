@@ -131,7 +131,7 @@ header .searchList{
     display: flex;
     align-items: center;
     height: 100%;
-    padding: 0 2.5rem 0 0;
+    padding: 0 0.25rem 0 0;
 }
 #searchBarForm > input{
     background-color: transparent;
@@ -143,10 +143,12 @@ header .searchList{
 .searchBarButton{
     border: none;
     background-color:#9ACD32;
-    border-radius: 25px 25px;
+    border-radius: 15px 15px;
     padding: 5px 5px;
     font-size: 1em;
-
+    width: 100px;
+    color: white;
+    font-weight: 600;
 }
 .searchBarButton:hover, .nav-toggle {
     cursor: pointer
@@ -456,4 +458,28 @@ li{
 footer .logo{
     text-decoration: none;
     color: #9ACD32;
+}
+
+.courseResumeBar {
+    width: 100%;
+    background-color: #1c1d1f;
+    display: flex;
+    color: white;
+    padding-left: 20%;
+    padding-right: 25%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.courseResumeContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.courseDetails {
+    padding-left: 20%;
+    padding-right: 25%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
