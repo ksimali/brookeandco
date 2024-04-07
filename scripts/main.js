@@ -1,3 +1,5 @@
+import GestionnaireJSON from "GestionnaireJSON.js";
+
 function toggleMenu(){
     var navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('open');
@@ -35,3 +37,19 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+/**
+ * Récupération et affichage des données JSON pour les cours populaires
+ */
+
+const GestionnaireJSON = new GestionnaireJSON();
+const urlpopulaires = './coursPopulaires';
+
+GestionnaireJSON.recupererDonneesJSON(urlpopulaires)
+                .then(donnees => {
+                    console.log("Données JSON récupérées avec succès : ", donnees);
+                    //action a faire avec les données JSON récupérées
+                })
+                .catch(erreur => {
+                  console.error("Une erreur est survenue lors de la récupération des données JSON : ", erreur);
+                });
