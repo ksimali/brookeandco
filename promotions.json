@@ -15,7 +15,7 @@
             "description": "Apprenez Python en partant de 0, et créez tous types de projets : Sites Web, Apps mobile, Jeux, Scripts, Hacking éthique",
             "prix": 199.99,
             "rabais": 50,
-            "image": "/images/python.jpg",
+            "image": "./images/python.jpeg",
             "lien": "https://example.com/courses/python"
         },
         {
@@ -24,7 +24,7 @@
             "description": "Apprenez la programmation avec le langage C# 10 et créez des applications web puissantes avec .NET Core 6",
             "prix": 149.99,
             "rabais": 30,
-            "image": "/images/csharp.jpg",
+            "image": "./images/c-sharp.webp",
             "lien": "https://example.com/courses/csharp"
         },
         {
@@ -33,7 +33,7 @@
             "description": "Ce cours pratique explore les technologies web modernes.",
             "prix": 129.99,
             "rabais": 25,
-            "image": "/images/developpement-web.jpeg",
+            "image": "./images/webdev-course.webp",
             "lien": "https://example.com/courses/developpement-web"
         },
         {
