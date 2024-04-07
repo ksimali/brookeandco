@@ -35,3 +35,12 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+// Ajoutez cet événement pour démarrer automatiquement le slideshow
+var slideInterval = setInterval(function() {
+  plusSlides(1);
+}, 5000); // Changez le temps en millisecondes selon vos préférences
+
+function loadData() {
+
+}
