@@ -9,7 +9,10 @@ const password = document.getElementById('password');
     loginForm.addEventListener('submit', e => {
         e.preventDefault(); // empêche la soumisson du formulaire
 
-        validateInputs() // validation des inputs
+        var isValid = validateInputs() // validation des inputs
+        if(isValid){
+            connexion();
+        }
     });
  
 // fonction qui recoit un element html un message d'erreur en paramètre
@@ -63,5 +66,32 @@ const validateInputs = () => {
         }else{
             setSuccess(password, 'C\'est parfait!');
         }
+    return testValidation;
+}
 
+function connexion() {
+    // Récupérer les valeurs du formulaire
+    var emailValue = email.value;
+    var passwordValue = password.value;
+
+    // Faire une requête pour charger le fichier JSON
+    fetch('user.json')
+    .then(response => response.json())
+    .then(data => {
+        // Vérifier si l'email et le mot de passe existent dans le JSON chargé
+        var userFound = data.users.find(function(user) {
+            return user.email === emailValue && user.password === passwordValue;
+        });
+
+        // Afficher un message en fonction du résultat de la vérification
+        if (userFound) {
+            alert("Connexion réussie !");
+            // Vous pouvez rediriger l'utilisateur vers une autre page ici
+        } else {
+            alert("Email ou mot de passe incorrect !");
+        }
+    })
+    .catch(error => {
+        console.error('Une erreur est survenue lors du chargement du fichier JSON :', error);
+    });
 }
