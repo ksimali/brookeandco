@@ -140,7 +140,7 @@ function loadCoursAsyncData(){
 function addPanier(cours) {
     var panier = JSON.parse(localStorage.getItem("panier"));
     if (panier) {
-        panier.subtotal += cours[0].cout;
+        panier.subtotal = (Number(panier.subtotal) + Number(cours[0].cout)).toFixed(2);
         panier.quantite += 1;
 
         panier.panierItem.push({

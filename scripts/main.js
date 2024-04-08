@@ -43,8 +43,10 @@ var slideInterval = setInterval(function() {
   plusSlides(1);
 }, 5000); // Changez le temps en millisecondes selon vos préférences
 
-function loadData() {
-
+var panier = JSON.parse(localStorage.getItem('panier'));
+const countItemCart = document.getElementById('countItemCart');
+if(panier){
+  countItemCart.innerHTML = panier.quantite;
 }
 
 /**
@@ -102,7 +104,7 @@ popularJSON.recupererDonneesJSON(urlpopulaires)
 
                       const addCart = document.createElement('div');
                       addCart.classList.add('ajouter');
-                      addCart.setAttribute('onclick', `ajouterItem('${title.textContent}', '1', '${priceSpan.textContent}')`);
+                      addCart.setAttribute('onclick', `ajouterItem('${data.titre}', '${data.prix}', '${data.image}', '${data.id}')`);
                       addCart.textContent = "ajouter";
           
                       cardContent.appendChild(titleModule);
@@ -200,4 +202,32 @@ function showDetails(id){
     localStorage.setItem("selectedCoursAsync", coursJSON);
     console.log("Objet sauvegarde");
     window.location.href = "/pages/coursAsynchrone.html"
+}
+
+function ajouterItem(titre, prix, image, id) {
+  var panier = JSON.parse(localStorage.getItem("panier"));
+  if (panier) {
+      panier.subtotal = (Number(panier.subtotal) + Number(prix)).toFixed(2);
+      panier.quantite += 1;
+
+      panier.panierItem.push({
+          'id': id,
+          'image': image,
+          'nom': titre,
+          'prix': prix
+      });
+  } else {
+      panier = {
+          'subtotal': prix,
+          'quantite': 1,
+          'panierItem': [{
+            'id': id,
+            'image': image,
+            'nom': titre,
+            'prix': prix
+          }]
+      };
+  }
+  document.getElementById('countItemCart').innerHTML = panier.quantite;
+  localStorage.setItem('panier', JSON.stringify(panier));
 }
