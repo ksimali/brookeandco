@@ -38,6 +38,15 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+// Ajoutez cet événement pour démarrer automatiquement le slideshow
+var slideInterval = setInterval(function() {
+  plusSlides(1);
+}, 5000); // Changez le temps en millisecondes selon vos préférences
+
+function loadData() {
+
+}
+
 /**
  * Récupération et affichage des données JSON pour les cours populaires
  */
@@ -104,4 +113,7 @@ popularJSON.recupererDonneesJSON(urlpopulaires)
                 .catch(erreur => {
                   console.error("Une erreur est survenue lors de la récupération des données JSON : ", erreur);
                 });
+
+
+
 
