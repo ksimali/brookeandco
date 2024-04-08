@@ -67,7 +67,7 @@ popularJSON.recupererDonneesJSON(urlpopulaires)
                       const imgWrapper = document.createElement('a');
                       imgWrapper.classList.add('categorie-img-wrapper');
                       imgWrapper.href = data.lien;
-                      imgWrapper.target = "_blank";
+                      //imgWrapper.target = "_blank";
         
                       const img = document.createElement('img');
                       img.src = data.image;
@@ -97,19 +97,19 @@ popularJSON.recupererDonneesJSON(urlpopulaires)
                       const price = document.createElement('div');
                       price.classList.add('price');
                       const priceSpan = document.createElement('span');
-                      priceSpan.textContent = `${data.prix} €`;
+                      priceSpan.textContent = `${data.prix} $`;
                       price.appendChild(priceSpan);
 
-                      const addCart = document.createElement('div');
-                      addCart.classList.add('ajouter');
-                      addCart.setAttribute('onclick', `ajouterItem('${title.textContent}', '1', '${priceSpan.textContent}')`);
-                      addCart.textContent = "ajouter";
+                      //const addCart = document.createElement('div');
+                      //addCart.classList.add('ajouter');
+                      //addCart.setAttribute('onclick', `ajouterItem('${title.textContent}', '1', '${priceSpan.textContent}')`);
+                      //addCart.textContent = "ajouter";
           
                       cardContent.appendChild(titleModule);
                       cardContent.appendChild(formateur);
                       cardContent.appendChild(rating);
                       cardContent.appendChild(price);
-                      cardContent.appendChild(addCart);
+                      //cardContent.appendChild(addCart);
           
                       cardWrapper.appendChild(imgWrapper);
                       cardWrapper.appendChild(cardContent);
@@ -169,7 +169,7 @@ asyncJSON.recupererDonneesJSON(coursAsyncPath)
         const price = document.createElement('div');
         price.classList.add('price');
         const priceSpan = document.createElement('span');
-        priceSpan.textContent = `${d.cout} €`;
+        priceSpan.textContent = `${d.cout} $`;
         price.appendChild(priceSpan);
 
         cardContent.appendChild(titleModule);
