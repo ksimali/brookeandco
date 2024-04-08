@@ -9,6 +9,11 @@ function loadCoursAsyncData(){
     document.getElementById("nbSection").innerHTML = cours[0].sections.length;
     document.getElementById("heureTotal").innerHTML = cours[0].durée;
     document.getElementById("enseignantName").innerHTML = cours[0].enseignant;
+
+    const addButton = document.getElementById("addPanierButton");
+    addButton.addEventListener('click', function(){
+        addPanier(cours);
+    })
     
     const parentElementTable = document.getElementById('tableSection');
 
@@ -124,7 +129,37 @@ function loadCoursAsyncData(){
         // Ajout de accordion-item à parentElement
         parentElementAccordion.appendChild(accordionItem);
     });
-    
-    
 
-  }
+    var panier = JSON.parse(localStorage.getItem('panier'));
+    if(panier){
+        document.getElementById('countItemCart').innerHTML = panier.quantite;
+    }
+}
+
+function addPanier(cours) {
+    var panier = JSON.parse(localStorage.getItem("panier"));
+    if (panier) {
+        panier.subtotal += cours[0].cout;
+        panier.quantite += 1;
+
+        panier.panierItem.push({
+            'id': cours[0].id,
+            'image': cours[0].image,
+            'nom': cours[0].titre,
+            'prix': cours[0].cout
+        });
+    } else {
+        panier = {
+            'subtotal': cours[0].cout,
+            'quantite': 1,
+            'panierItem': [{
+                'id': cours[0].id,
+                'image': cours[0].image,
+                'nom': cours[0].titre,
+                'prix': cours[0].cout
+            }]
+        };
+    }
+    document.getElementById('countItemCart').innerHTML = panier.quantite;
+    localStorage.setItem('panier', JSON.stringify(panier));
+}

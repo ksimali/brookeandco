@@ -528,3 +528,17 @@ footer .logo{
     padding-top: 3%;
     padding-bottom: 3%;
 }
+.count{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    font-size: 0.8em;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 15px;
+}
