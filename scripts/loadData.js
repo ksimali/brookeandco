@@ -131,8 +131,9 @@ function loadCoursAsyncData(){
     });
 
     var panier = JSON.parse(localStorage.getItem('panier'));
+    const countItemCart = document.getElementById('countItemCart');
     if(panier){
-        document.getElementById('countItemCart').innerHTML = panier.quantite;
+        countItemCart.innerHTML = panier.quantite;
     }
 }
 
