@@ -2,10 +2,12 @@
     "liste" :[
         {
             "id":"AS01",
-            "image": "javascript.jpg",
+            "image": "images/javascript.jpeg",
+            "titre" : "Les bases du Javascript",
             "cout": 60.00,
             "description": " Maîtrisez Javascript grâce a ce superbe cours très complet!",
             "durée": 60,
+            "enseignant": "Paul Lanh",
             "notation": 4,
             "sections":[
                 {
@@ -26,7 +28,7 @@
                         },
                         {
                             "titre" : "Concept de bases en Javascript",
-                            "description" : "notion de data-type, fonction et boucle et conditions ej javascript",
+                            "description" : "Notion de data-type, fonction et boucle et conditions en javascript",
                             "url" : "https://www.youtube.com/watch?v=W6NZfCO5SIk",
                             "durée" : 30
                         }
@@ -37,10 +39,12 @@
         },
         {
             "id":"AS02",
-            "image": "python.jpg",
+            "image": "images/python.jpeg",
+            "titre" : "Les bases du Python",
             "cout": 60.00,
             "description": " Maîtrisez Python grâce a ce superbe cours très complet!",
-            "durée": 30,
+            "durée": 60,
+            "enseignant": "Paul Lanh",
             "notation": 4,
             "sections":[
                 {
@@ -66,10 +70,12 @@
         },
         {
             "id":"AS03",
-            "image": "csharp.jpg",
+            "image": "images/csharp.png",
+            "titre" : "Les bases du C#",
             "cout": 60.00,
             "description": "Maitrisez le langage c# pas à pas",
-            "durée": 30,
+            "durée": 60,
+            "enseignant": "Paul Lanh",
             "notation": 4,
             "sections":[
                 {
@@ -112,10 +118,13 @@
 
         },
         {
-            "image": "java.jpg",
+            "id": "AS04",
+            "image": "images/java-logo.svg",
+            "titre" : "Les bases du Java",
             "cout": 60.00,
             "description": "Maitrisez le langage de programmation Java de A à Z.",
             "durée": 30,
+            "enseignant": "Paul Lanh",
             "notation": 4,
             "sections":[
                 {

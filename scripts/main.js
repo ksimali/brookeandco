@@ -113,3 +113,83 @@ popularJSON.recupererDonneesJSON(urlpopulaires)
                 .catch(erreur => {
                   console.error("Une erreur est survenue lors de la récupération des données JSON : ", erreur);
                 });
+
+const asyncJSON = new GestionnaireJSON();
+const coursAsyncPath = '/coursAsynchrones.json';
+var coursAsynchrones
+asyncJSON.recupererDonneesJSON(coursAsyncPath)
+    .then(data => {
+      console.log("coursAsynchrones")
+      console.log("Données JSON récupérées avec succès : ", data);
+
+      coursAsynchrones = data;
+
+      const parentElement = document.getElementById('asyncCourses');
+
+      data.liste.forEach(d => {
+        const cardWrapper = document.createElement('div');
+        cardWrapper.classList.add('async-card');
+
+        const imgWrapper = document.createElement('div');
+        imgWrapper.classList.add('categorie-img-wrapper');
+
+        const img = document.createElement('img');
+        img.src = d.image;
+        img.alt = d.description;
+
+        imgWrapper.appendChild(img);
+
+        const cardContent = document.createElement('div');
+        cardContent.classList.add('async-card-content');
+
+        const titleModule = document.createElement('div');
+        titleModule.classList.add('card-title-module');
+        const title = document.createElement('h3');
+        title.textContent = d.titre;
+        titleModule.appendChild(title);
+
+        const formateur = document.createElement('div');
+        formateur.classList.add('formateur');
+        formateur.textContent = d.enseignant;
+
+        const rating = document.createElement('div');
+        rating.classList.add('rating');
+        const ratingSpan = document.createElement('span');
+        ratingSpan.textContent = `Note : ${d.notation} sur 5`;
+        rating.appendChild(ratingSpan);
+
+        const price = document.createElement('div');
+        price.classList.add('price');
+        const priceSpan = document.createElement('span');
+        priceSpan.textContent = `${d.cout} €`;
+        price.appendChild(priceSpan);
+
+        cardContent.appendChild(titleModule);
+        cardContent.appendChild(formateur);
+        cardContent.appendChild(rating);
+        cardContent.appendChild(price);
+
+        cardWrapper.appendChild(imgWrapper);
+        cardWrapper.appendChild(cardContent);
+
+        cardWrapper.addEventListener('click', function(event) {
+          showDetails(d.id)
+      });
+
+        parentElement.appendChild(cardWrapper);
+    });
+  })
+  .catch(erreur => {
+    console.error("Une erreur est survenue lors de la récupération des données JSON : ", erreur);
+});
+
+function showDetails(id){
+    console.log("CoursAsyncId", id);
+
+    const cours = coursAsynchrones.liste.filter(d => d.id === id);
+    console.log("CAS", cours);
+    const coursJSON = JSON.stringify(cours);
+    localStorage.setItem("selectedCoursAsync", coursJSON);
+    console.log("Objet sauvegarde");
+    window.location.href = "/pages/coursAsynchrone.html"
+}
