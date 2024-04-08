@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/forms.css">
+     <!-- Bootstrap CSS-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <!-- Custom CSS -->
+     <link rel="stylesheet" href="/styles/main.css" >
+     <link rel="stylesheet" href="/styles/cart.css">
+    <title>Brooke and Co</title>
 </head>
 <body>
     <div class="wrapper">
-        <!-- Header Section -->
         <header>  
             <div class = "searchList">
                 <div class="logo-container">
@@ -31,47 +33,66 @@
                         placeholder="Rechercher"
                         aria-label ="Rechercher a travers le contenu du site"
                         >
-                    <button type="submit" class="searchBarButton">
-                        Search
-                    </button>
+                    <button type="submit" class="searchBarButton">Search</button>
                 </form>
             </div>
-          
             <ul class="nav-links">
                 <li class="cart"><a href="/pages/cart.html"><img src="/images/shopping-cart.png" alt=""></a></li>
                 <li class="signIn"><a href="/pages/login.html">Connexion</a></li>
                 <li class="register"><a href="/pages/register.html">Inscription</a></li>
             </ul>
         </header>
-        <!-- Login Main Section -->
-        <main class="form-container">
-            <div class="form-wrapper">
-                <h2 class="title"> CONNEXION </h2>
-                <form action="" method="" id="loginForm" novalidate>
-                    <div class="form-group">
-                        <label for="email" class="text-black">Courriel</label>
-                        <input type="text" class="form-control" id="email" name="email" placeholder="christiandior@dior.ca">
-                        <div class="error" id="email-error"></div>
+        <main>
+             <!-- Start Hero Section -->
+            <div class="hero">
+                <div class="container">
+                    <div class="text-center text-black">
+                        <h1 class="display-4 mt-5 fw-bolder">Votre panier</h1>
                     </div>
-                    <div class="form-group">
-                        <label for="password" class="text-black">Mot de passe</label>
-                        <input type="password" class="form-control" id="password" name="password" placeholder="mot de passe">
-                        <div class="error" id="password-error"></div>
-                    </div>
-                    <div class="toRegister"> 
-                        Pas encore Client ?
-                        <a href="/pages/register.html" class="linkToRegister">Cliquez ici</a>
-                        pour s'inscrire
-                    </div>
-                    <div class="buttonContainer">
-                        <button class="submitButton">Connexion</button>
-                    </div>
-                </form>
+                </div>
             </div>
+             <!-- Cart section -->
+        <div class="co-section px-0 py-5">
+            <div class="container">
+                <div class="row">
+                    <form method="post" class="col-md-12">
+                        <div class="section-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="product-image">Image</th>
+                                        <th class="product-name">Nom</th>
+                                        <th class="product-price">Prix</th>
+                                        <th class="product-quantity">Quantité</th>
+                                        <th class="product-total">Total</th>
+                                        <th class="product-remove">Supprimer</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="list-container">
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </form>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <div class="row mb-5">
+                            <div class="col-md-6"></div>
+                            <div class="col-md-6">
+                                <a href="/index.html"><button class="cart-btn">Continue Shopping</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 pl-5 total-panier">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
             
-    
+            </div>
         </main>
-        <!-- Footer section -->
         <footer class="footer">
             <div class="footer-section fs1">
                 <h3> Les meilleures entreprises choisissent Brookeandco Business pour fomer leurs collaborateurs</h2>
@@ -80,16 +101,16 @@
                 <div class="links">
                     <ul>
                         <li>
-                            <a href="" class="link" target="_blank" >Udemy Business</a>
+                            <a href="" class="link" target="_blank" >Brookeandco Business</a>
                         </li>
                         <li>
-                            <a class="link" href="">Enseigner sur Udemy</a>
+                            <a class="link" href="">Enseigner sur Brookeandco</a>
                         </li>
                         <li>
                             <a class="link" href="" target="_blank">Téléchargez l'application</a>
                         </li>
                         <li>
-                            <a class="link" href="">À propos d'Udemy</a>
+                            <a class="link" href="">À propos de Brookeandco</a>
                         </li>
                         <li>
                             <a class="link" href="">Contactez-nous</a>
@@ -141,7 +162,6 @@
             </div>
         </footer>
     </div>
-    <script src="/scripts/GestionnaireJSON.js"></script>
-    <script src="/scripts/LoginFormValidation.js"></script>
+    <script src="/scripts/main.js"></script>
 </body>
 </html>
