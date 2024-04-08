@@ -340,6 +340,36 @@ header .searchList{
     height: 300px;
     width: 300px;
 }
+
+/* Section cours Asynchrones*/
+
+.async-courses{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content:center;
+}
+.async-courses-title{
+    margin: 0 0 3rem;
+}
+.async-card{
+    margin: 0 1.6rem 1.6rem 0;
+    cursor: pointer;
+}
+.async-card-title{
+    padding: 0.8rem 0 1.6rem 0.8rem;
+}
+.async-img-wrapper{
+    overflow: hidden;
+}
+.async-img-wrapper img{
+    height: 300px;
+    width: 300px;
+}
+.async-card-content{
+    width: 300px;
+}
+
 .ajouter{
     margin-top: 10px;
     text-align: center;
