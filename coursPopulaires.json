@@ -8,7 +8,7 @@
             "prix": 19.99,
             "score": 5,
             "image": "images/dev-web.jpeg",
-            "lien": "https://example.com/courses/web-development"
+            "lien": "/pages/coursAsynchrone.html"
         },
         {
             "id": "CP02",
@@ -18,7 +18,7 @@
             "prix": 19.99,
             "score": 5,
             "image": "images/python-fullCourses.jpeg",
-            "lien": "https://example.com/courses/python-advanced"
+            "lien": "/pages/coursAsynchrone.html"
         },
         {
             "id": "CP03",
@@ -28,7 +28,7 @@
             "prix": 29.99,
             "score": 5,
             "image": "images/digital-marketing.jpeg",
-            "lien": "https://example.com/courses/digital-marketing"
+            "lien": "/pages/coursAsynchrone.html"
         },
         {
             "id": "CP04",
@@ -38,7 +38,7 @@
             "prix": 39.99,
             "score": 5,
             "image": "images/graphic-design.jpeg",
-            "lien": "https://example.com/courses/graphic-design"
+            "lien": "/pages/coursAsynchrone.html"
         },
         {
             "id":"CP05",
@@ -48,7 +48,7 @@
             "prix": 39.99,
             "score": 5,
             "image": "images/javascript.jpeg",
-            "lien": "https://example.com/courses/javascript"
+            "lien": "/pages/coursAsynchrone.html"
         },
         {
             "id":"CP06",
@@ -58,7 +58,7 @@
             "prix": 49.99,
             "score": 5,
             "image": "images/reactjs.png",
-            "lien": "https://example.com/courses/reactjs"
+            "lien": "/pages/coursAsynchrone.html"
         }
     ]
 }
