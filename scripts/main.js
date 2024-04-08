@@ -61,13 +61,14 @@ popularJSON.recupererDonneesJSON(urlpopulaires)
                     const parentElement = document.getElementById('popularCourses');
 
                     donnees.populaires.forEach(data => {
-                      const cardWrapper = document.createElement('a');
+                      const cardWrapper = document.createElement('div');
                       cardWrapper.classList.add('popular-card');
-                      cardWrapper.href = data.lien;
-          
-                      const imgWrapper = document.createElement('div');
+                      
+                      const imgWrapper = document.createElement('a');
                       imgWrapper.classList.add('categorie-img-wrapper');
-          
+                      imgWrapper.href = data.lien;
+                      imgWrapper.target = "_blank";
+        
                       const img = document.createElement('img');
                       img.src = data.image;
                       img.alt = 'Image de cours de développement web';
@@ -98,11 +99,17 @@ popularJSON.recupererDonneesJSON(urlpopulaires)
                       const priceSpan = document.createElement('span');
                       priceSpan.textContent = `${data.prix} €`;
                       price.appendChild(priceSpan);
+
+                      const addCart = document.createElement('div');
+                      addCart.classList.add('ajouter');
+                      addCart.setAttribute('onclick', `ajouterItem('${title.textContent}', '1', '${priceSpan.textContent}')`);
+                      addCart.textContent = "ajouter";
           
                       cardContent.appendChild(titleModule);
                       cardContent.appendChild(formateur);
                       cardContent.appendChild(rating);
                       cardContent.appendChild(price);
+                      cardContent.appendChild(addCart);
           
                       cardWrapper.appendChild(imgWrapper);
                       cardWrapper.appendChild(cardContent);
@@ -113,6 +120,7 @@ popularJSON.recupererDonneesJSON(urlpopulaires)
                 .catch(erreur => {
                   console.error("Une erreur est survenue lors de la récupération des données JSON : ", erreur);
                 });
+
 
 const asyncJSON = new GestionnaireJSON();
 const coursAsyncPath = '/coursAsynchrones.json';

@@ -370,6 +370,21 @@ header .searchList{
     width: 300px;
 }
 
+.ajouter{
+    margin-top: 10px;
+    text-align: center;
+    background-color:#9ACD32;
+    padding: 10px;
+    width: 30%;
+    border-radius: 50px;
+    color: white;
+    font-size: bold;
+}
+.ajouter:hover{
+    background-color: grey;
+    cursor: pointer;
+
+}
 /* Section les meilleurs catégories */
 .top-categories{
     display: flex;
