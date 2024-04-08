@@ -5,6 +5,8 @@
             "titre": "Développement Web complet",
             "description": "Apprenez le développement Web de A à Z avec notre cours en ligne.",
             "prix": 199.99,
+            "enseignant": "Noah Barnah",
+            "rating": "4,6",
             "image": "images/dev-web.jpeg",
             "lien": "https://example.com/courses/web-development"
         },
@@ -12,6 +14,9 @@
             "id": "CP02",
             "titre": "Formation avancée en Python",
             "description": "Maîtrisez les concepts avancés de Python avec notre formation en ligne.",
+            "prix": 199.99,
+            "enseignant": "Noah Barnah",
+            "rating": "4,6",
             "image": "images/python-fullCourses.jpeg",
             "lien": "https://example.com/courses/python-advanced"
         },
@@ -20,6 +25,8 @@
             "titre": "Formation en marketing digital",
             "description": "Découvrez les stratégies de marketing digital les plus efficaces avec notre cours en ligne.",
             "prix": 129.99,
+            "enseignant": "Noah Barnah",
+            "rating": "4,6",
             "image": "images/digital-marketing.jpeg",
             "lien": "https://example.com/courses/digital-marketing"
         },
@@ -28,6 +35,8 @@
             "titre": "Formation en design graphique",
             "description": "Apprenez à concevoir des graphiques attrayants avec notre cours en ligne.",
             "prix": 99.99,
+            "enseignant": "Noah Barnah",
+            "rating": "4,6",
             "image": "images/graphic-design.jpeg",
             "lien": "https://example.com/courses/graphic-design"
         },
@@ -36,6 +45,8 @@
             "titre": "Javascript de A à Z",
             "description": " Maîtrisez Javascript grâce a ce superbe cours très complet!",
             "prix": 60.00,
+            "enseignant": "Noah Barnah",
+            "rating": "4,6",
             "image": "images/javascript.jpeg",
             "lien": "https://example.com/courses/javascript"
         },
@@ -44,11 +55,10 @@
             "titre":"React JS tutorial pour débutants",
             "description":"Créez des applications Web robustes, rapides, conviviales et réactives.",
             "prix": 60.00,
+            "enseignant": "Noah Barnah",
+            "rating": "4,6",
             "image": "images/reactjs.png",
             "lien": "https://example.com/courses/reactjs"
-            
         }
-        
-
     ]
 }
