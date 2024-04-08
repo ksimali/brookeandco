@@ -113,4 +113,3 @@ popularJSON.recupererDonneesJSON(urlpopulaires)
                 .catch(erreur => {
                   console.error("Une erreur est survenue lors de la récupération des données JSON : ", erreur);
                 });
-
