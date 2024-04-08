@@ -9,7 +9,10 @@ const password = document.getElementById('password');
     loginForm.addEventListener('submit', e => {
         e.preventDefault(); // empêche la soumisson du formulaire
 
-        validateInputs() // validation des inputs
+        var isValid = validateInputs() // validation des inputs
+        if(!isValid){
+            userConnexion()
+        }
     });
  
 // fonction qui recoit un element html un message d'erreur en paramètre
@@ -46,22 +49,49 @@ const validateInputs = () => {
         if(emailValue === ''){
             setError(email, 'Courriel obligatoire');
             testValidation = true;
-        }else if(!emailValue.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)){
-            setError(email, 'format du courriel non autorisé ! ');
+        } else if(!emailValue.match(/^[\w.-]+@([\w-]+\.)+[\w-]{2,4}$/)){
+            setError(email, 'Format du courriel non autorisé !');
             testValidation = true;
-        }else{
-            setSuccess(email, 'C\'est parfait!');
+        } else {
+            setSuccess(email, 'C\'est parfait !');
         }
-
-        // validation mot de passe
+        
+        // Validation mot de passe
         if(passwordValue === ''){
             setError(password, "Mot de passe obligatoire");
             testValidation = true;
-        }else if(!passwordValue.match(/^[[a-zA-Z0-9_|\-\s]{2,8}$/)){
-            setError(password, 'Format a respecter: entre 2 et 8 caractères');
+        } else if(!passwordValue.match(/^[\w\-]{2,8}$/)){
+            setError(password, 'Format à respecter : entre 2 et 8 caractères, lettres, chiffres, tirets et underscores autorisés');
             testValidation = true;
-        }else{
-            setSuccess(password, 'C\'est parfait!');
-        }
+        } else {
+            setSuccess(password, 'C\'est parfait !');
+        }        
+        return testValidation;
+}
 
+const userConnexion = () => {
+    // Récupérer les valeurs du formulaire
+    var emailValue = email.value;
+    var passwordValue = password.value;
+
+    // Faire une requête pour charger le fichier JSON
+    const userJSON = new GestionnaireJSON();
+    userJSON.recupererDonneesJSON('/user.json')
+    .then(data => {
+        // Vérifier si l'email et le mot de passe existent dans le JSON chargé
+        var userFound = data.users.find(function(user) {
+            return user.email === emailValue && user.password === passwordValue;
+        });
+
+        // Afficher un message en fonction du résultat de la vérification
+        if (userFound) {
+            alert("Connexion réussie !");
+            window.location.href = "/index.html"
+        } else {
+            alert("Email ou mot de passe incorrect !");
+        }
+    })
+    .catch(error => {
+        console.error('Une erreur est survenue lors du chargement du fichier JSON :', error);
+    });
 }

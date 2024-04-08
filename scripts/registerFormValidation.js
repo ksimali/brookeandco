@@ -10,7 +10,10 @@ const password = document.getElementById('password');
     registerForm.addEventListener('submit', e => {
         e.preventDefault(); // empêche la soumisson du formulaire
 
-        validateInputs() // validation des inputs
+        isValid = validateInputs() // validation des inputs
+        if(!isValid){
+            addUser(name.value, email.value, password.value)
+        }
     });
  
 // fonction qui recoit un element html un message d'erreur en paramètre
@@ -71,11 +74,54 @@ const validateInputs = () => {
         if(passwordValue === ''){
             setError(password, "Mot de passe obligatoire");
             testValidation = true;
-        }else if(!passwordValue.match(/^[[a-zA-Z0-9_|\-\s]{2,8}$/)){
+        }else if(!passwordValue.match(/^[\w\-]{2,8}$/)){
             setError(password, 'Format a respecter: entre 2 et 8 caractères');
             testValidation = true;
         }else{
             setSuccess(password, 'C\'est parfait!');
         }
+    return testValidation;
+}
 
+// Fonction pour ajouter un utilisateur
+function addUser(name, email, password) {
+    // Charger le fichier JSON
+    const userJSON = new GestionnaireJSON();
+    userJSON.recupererDonneesJSON('/user.json')
+    .then(data => {
+        // Ajouter le nouvel utilisateur à l'objet JSON
+        var newUser = {
+            "name": name,
+            "email": email,
+            "password": password
+        };
+        data.users.push(newUser);
+
+        // Enregistrer les données mises à jour dans le fichier
+        saveUsers(data);
+    })
+    .catch(error => {
+        console.error('Une erreur est survenue lors du chargement du fichier JSON :', error);
+    });
+}
+
+// Fonction pour enregistrer les utilisateurs dans le fichier
+function saveUsers(data) {
+    fetch('/user.json', {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => {
+        if (response.ok) {
+            console.log('Utilisateur ajouté avec succès.');
+        } else {
+            console.error('Erreur lors de l\'ajout de l\'utilisateur :', response.statusText);
+        }
+    })
+    .catch(error => {
+        console.error('Une erreur est survenue lors de la sauvegarde des utilisateurs :', error);
+    });
 }
