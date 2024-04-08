@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <!-- Custom CSS -->
+     <link rel="stylesheet" href="/styles/main.css" >
+     <link rel="stylesheet" href="/styles/cart.css">
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <title>Brooke and Co</title>
+    <style>
+        #carte { /* Ajout de styles pour définir une hauteur à la carte */
+            height: 400px; /* Ajustez la hauteur selon vos besoins */
+            width: 70%;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>  
+            <div class = "searchList">
+                <div class="logo-container">
+                    <a href="/index.html" class="logo">
+                        <h2>Brookeandco</h2>
+                    </a> 
+                </div>
+                <button class= "exploreButton">
+                        <span>Explorer</span>
+                        <svg class="exploreButtonArrow " viewBox="0 0 32 32" width="9" height="9"><path fill="#fff" d="M30.054 14.429l-13.25 13.232q-0.339 0.339-0.804 0.339t-0.804-0.339l-13.25-13.232q-0.339-0.339-0.339-0.813t0.339-0.813l2.964-2.946q0.339-0.339 0.804-0.339t0.804 0.339l9.482 9.482 9.482-9.482q0.339-0.339 0.804-0.339t0.804 0.339l2.964 2.946q0.339 0.339 0.339 0.813t-0.339 0.813z"></path></svg>
+                </button>
+                <div class="scrollingMenu">
+
+                </div>
+            </div>
+            <div class="searchBar">
+                <form action="" id="searchBarForm" role="search">
+                    <input type="search" id="query" name="query"
+                        placeholder="Rechercher"
+                        aria-label ="Rechercher a travers le contenu du site"
+                        >
+                    <button type="submit" class="searchBarButton">Search</button>
+                </form>
+            </div>
+            <ul class="nav-links">
+                <li class="cart"><a href="/pages/cart.html"><img src="/images/shopping-cart.png" alt=""><span class="count" id="countItemCart">0</span></a></li>
+                <li class="signIn"><a href="/pages/login.html">Connexion</a></li>
+                <li class="register"><a href="/pages/register.html">Inscription</a></li>
+            </ul>
+        </header>
+        <main>
+            <section class="section">
+                <article class="article" id="carte"></article> <!-- L'article contient maintenant l'id "carte" -->
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-section fs1">
+                <h3> Les meilleures entreprises choisissent Brookeandco Business pour fomer leurs collaborateurs</h2> <!-- La balise de fermeture h3 a été corrigée -->
+            </div>
+            <div class="footer-section fs2">
+                <div class="links">
+                    <ul>
+                        <li>
+                            <a href="" class="link" target="_blank" >Brookeandco Business</a>
+                        </li>
+                        <li>
+                            <a class="link" href="">Enseigner sur Brookeandco</a>
+                        </li>
+                        <li>
+                            <a class="link" href="" target="_blank">Téléchargez l'application</a>
+                        </li>
+                        <li>
+                            <a class="link" href="">À propos de Brookeandco</a>
+                        </li>
+                        <li>
+                            <a class="link" href="">Contactez-nous</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a class="link" href="">Carrières</a>
+                        </li>
+                        <li>
+                            <a class="link" href="">Blog</a>
+                        </li>
+                        <li>
+                            <a class="link" href="">Aide et support</a>
+                        </li>
+                        <li>
+                            <a class="link" href="">Affilié</a>
+                        </li>
+                        <li>
+                            <a class="link" href="">Investisseurs</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a class="link" href="">Conditions</a>
+                        </li>
+                        <li>
+                            <a class="link" href="">Politique de confidentialité</a>
+                        </li>
+                        <li>
+                            <a class="link" href="">Paramètres des cookies</a>
+                        </li>
+                        <li>
+                            <a class="link" href="">Plan du site</a>
+                        </li>
+                        <li>
+                            <a class="link" href="">Déclaration d'accessibilité</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="logo-copyright">
+                    <div class="logo-container">
+                        <a href="/" class="logo">
+                            <h3>Brookeandco</h3>
+                        </a>
+                    </div>
+                    <div class="copyright-container">© 2024 Brookeandco, Inc.</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        var carte = L.map('carte').setView([45.4837908188, -73.8689347203], 15);
+      
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(carte);
+      
+        var adresseCoord = [45.4837908188, -73.8689347203];
+      
+        L.marker(adresseCoord).addTo(carte)
+          .bindPopup('Cegep Gerald-Godin')
+          .openPopup();
+    </script>
+</body>
+</html>
